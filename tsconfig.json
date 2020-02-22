@@ -14,7 +14,8 @@
       "~/*": ["./*"],
       "@/*": ["./*"]
     },
+    "skipLibCheck": true,
     "types": ["@types/node", "@nuxt/types"]
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
 }
