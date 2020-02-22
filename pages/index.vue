@@ -1,14 +1,33 @@
 <template>
   <div class="container">
-    Index Page
+    <player-card :player="PlayerA" />
+    <player-card :player="PlayerB" />
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from "nuxt-property-decorator";
+import PlayerCard from "~/components/PlayerCard.vue";
+import { Player } from "~/models/player";
 
-@Component
-export default class Index extends Vue {}
+@Component({
+  components: { PlayerCard }
+})
+export default class Index extends Vue {
+  PlayerA: Player = {
+    name: "JangDongKeon",
+    imgURL:
+      "https://img.sbs.co.kr/newsnet/etv/upload/2012/08/17/30000130678_700.jpg",
+    score: 0
+  };
+
+  PlayerB: Player = {
+    name: "Computer",
+    imgURL:
+      "https://cdn5.vectorstock.com/i/1000x1000/65/59/hacker-with-computer-avatar-character-vector-14776559.jpg",
+    score: 0
+  };
+}
 </script>
 
 <style>
@@ -19,27 +38,5 @@ export default class Index extends Vue {}
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>
