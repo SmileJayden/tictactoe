@@ -1,0 +1,21 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "My spectacular Nuxt.js project",
+  "author": "SmileJayden",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "element-ui": "^2.4.11",
+    "nuxt": "^2.11.0"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "fsevents": "2.1.2"
+  }
+}
