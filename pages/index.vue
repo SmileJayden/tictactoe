@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component } from "nuxt-property-decorator";
+import { Vue, Component, State } from "nuxt-property-decorator";
 import PlayerCard from "~/components/PlayerCard.vue";
 import { Player } from "~/models/player";
 
