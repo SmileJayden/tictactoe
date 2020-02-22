@@ -5,6 +5,10 @@
 ## Build Setup
 
 ``` bash
+# version
+yarn : 1.17.3
+node : 10.17.0
+
 # install dependencies
 $ yarn install
 
