@@ -5,16 +5,19 @@
   "author": "SmileJayden",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate"
   },
   "dependencies": {
+    "@nuxt/typescript-runtime": "^0.3.9",
     "element-ui": "^2.4.11",
     "nuxt": "^2.11.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.5.7"
+  },
   "resolutions": {
     "fsevents": "2.1.2"
   }
