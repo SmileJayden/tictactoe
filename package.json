@@ -23,5 +23,11 @@
   },
   "resolutions": {
     "fsevents": "2.1.2"
+  },
+  "optionalDependencies": {
+    "fsevents": "2.1.2"
+  },
+  "engines": {
+    "node": ">=10.17.0"
   }
 }
