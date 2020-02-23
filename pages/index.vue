@@ -3,10 +3,9 @@
     <player-card :player="PlayerA" />
     <game-table :cells="cells" @cell-click="handleCellClick" />
     <player-card :player="PlayerB" />
-    <el-dialog
-      :visible="dialogVisible"
-      :title="`[${this.turnOwner.name}] WINS!!!!!!`"
-    />
+    <el-dialog :visible="dialogVisible" :title="dialogMsg" :show-close="false">
+      <el-button @click="handleBtnClick">게임 다시하기</el-button>
+    </el-dialog>
   </div>
 </template>
 
@@ -40,6 +39,7 @@ export default class Index extends Vue {
   turnOwner: Player = this.PlayerA;
 
   dialogVisible: boolean = false;
+  dialogMsg: string = '';
 
   cells: Cell[] = [
     {
@@ -82,8 +82,8 @@ export default class Index extends Vue {
 
   @Watch('turnOwner', { immediate: true })
   onCellChanged(val: Player, oldVal: Player): void {
-    console.log('this.cells', oldVal);
     if (
+      //row win
       (this.cells[0].color === this.cells[1].color &&
         this.cells[1].color === this.cells[2].color &&
         this.cells[2].color !== 'white') ||
@@ -94,10 +94,11 @@ export default class Index extends Vue {
         this.cells[7].color === this.cells[8].color &&
         this.cells[8].color !== 'white')
     ) {
-      //row win
+      this.dialogMsg = this.getGameRes(oldVal);
       this.dialogVisible = !this.dialogVisible;
       return;
     } else if (
+      //col win
       (this.cells[0].color === this.cells[3].color &&
         this.cells[3].color === this.cells[6].color &&
         this.cells[6].color !== 'white') ||
@@ -108,10 +109,11 @@ export default class Index extends Vue {
         this.cells[5].color === this.cells[8].color &&
         this.cells[8].color !== 'white')
     ) {
-      //col win
+      this.dialogMsg = this.getGameRes(oldVal);
       this.dialogVisible = !this.dialogVisible;
       return;
     } else if (
+      //cross win
       (this.cells[0].color === this.cells[4].color &&
         this.cells[4].color === this.cells[8].color &&
         this.cells[8].color !== 'white') ||
@@ -119,12 +121,13 @@ export default class Index extends Vue {
         this.cells[4].color === this.cells[6].color &&
         this.cells[6].color !== 'white')
     ) {
-      //cross win
       this.dialogVisible = !this.dialogVisible;
+      this.dialogMsg = this.getGameRes(oldVal);
       return;
     } else if (this.cells.every(x => x.color !== 'white')) {
       //draw
       this.dialogVisible = !this.dialogVisible;
+      this.dialogMsg = this.getGameRes('draw');
       return;
     }
   }
@@ -133,6 +136,26 @@ export default class Index extends Vue {
     if (cell.color !== 'white') return;
     this.cells[cell.index].color = this.turnOwner.color;
     this.turnChange();
+  }
+
+  handleBtnClick(): void {
+    this.dialogVisible = !this.dialogVisible;
+    this.resetGame();
+  }
+
+  applyScore(): void {}
+
+  resetGame(): void {
+    this.cells = this.cells.map(c => {
+      return { ...c, color: 'white' };
+    });
+  }
+
+  getGameRes(winner: Player | string): string {
+    if (winner === 'draw') {
+      return 'DRAW!!';
+    }
+    return `${(winner as Player).name} WINS!!!!!!!!`;
   }
 
   turnChange(): void {
