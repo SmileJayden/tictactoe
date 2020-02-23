@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <player-card :player="PlayerA" />
+    <player-card :player="PlayerA" :score="$store.state.scoreRed" />
     <game-table :cells="cells" @cell-click="handleCellClick" />
-    <player-card :player="PlayerB" />
+    <player-card :player="PlayerB" :score="$store.state.scoreBlue" />
     <el-dialog :visible="dialogVisible" :title="dialogMsg" :show-close="false">
       <el-button @click="handleBtnClick">게임 다시하기</el-button>
     </el-dialog>
@@ -10,7 +10,13 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, State, Watch } from 'nuxt-property-decorator';
+import {
+  Vue,
+  Component,
+  Watch,
+  State,
+  Mutation,
+} from 'nuxt-property-decorator';
 import PlayerCard from '~/components/PlayerCard.vue';
 import GameTable from '~/components/GameTable.vue';
 import { Player } from '~/models/player';
@@ -20,11 +26,13 @@ import { Cell } from '~/models/Tictactoe';
   components: { PlayerCard, GameTable },
 })
 export default class Index extends Vue {
+  @Mutation('incrementRed') incrementRed: any;
+  @Mutation('incrementBlue') incrementBlue: any;
+
   PlayerA: Player = {
     name: 'JangDongKeon',
     imgURL:
       'https://img.sbs.co.kr/newsnet/etv/upload/2012/08/17/30000130678_700.jpg',
-    score: 0,
     color: 'red',
   };
 
@@ -32,12 +40,12 @@ export default class Index extends Vue {
     name: 'Computer',
     imgURL:
       'https://cdn5.vectorstock.com/i/1000x1000/65/59/hacker-with-computer-avatar-character-vector-14776559.jpg',
-    score: 0,
     color: 'blue',
   };
 
   turnOwner: Player = this.PlayerA;
 
+  gameRes: string = '';
   dialogVisible: boolean = false;
   dialogMsg: string = '';
 
@@ -143,9 +151,14 @@ export default class Index extends Vue {
     this.resetGame();
   }
 
-  applyScore(): void {}
+  updateScore(): void {
+    if (this.gameRes === 'draw') return;
+    else if (this.gameRes === 'red') this.incrementRed();
+    else if (this.gameRes === 'blue') this.incrementBlue();
+  }
 
   resetGame(): void {
+    this.updateScore();
     this.cells = this.cells.map(c => {
       return { ...c, color: 'white' };
     });
@@ -153,8 +166,10 @@ export default class Index extends Vue {
 
   getGameRes(winner: Player | string): string {
     if (winner === 'draw') {
+      this.gameRes = 'draw';
       return 'DRAW!!';
     }
+    this.gameRes = (winner as Player).color;
     return `${(winner as Player).name} WINS!!!!!!!!`;
   }
 

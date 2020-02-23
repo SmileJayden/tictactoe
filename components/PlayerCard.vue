@@ -5,7 +5,7 @@
       <div class="name">
         {{ player.name }}
       </div>
-      <div class="score">score : {{ player.score }}</div>
+      <div class="score">score : {{ score }}</div>
     </div>
   </div>
 </template>
@@ -17,6 +17,7 @@ import { Player } from '~/models/player';
 @Component
 export default class PlayerCard extends Vue {
   @Prop({ required: true }) player!: Player;
+  @Prop({ required: true }) score!: number;
 }
 </script>
 
