@@ -7,7 +7,7 @@
 ``` bash
 # version
 yarn : 1.17.3
-node : 10.17.0
+node : 12.16.1
 
 # install dependencies
 $ yarn install

@@ -20,14 +20,5 @@
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.5.7"
-  },
-  "resolutions": {
-    "fsevents": "2.1.2"
-  },
-  "optionalDependencies": {
-    "fsevents": "2.1.2"
-  },
-  "engines": {
-    "node": ">=10.17.0"
   }
 }
