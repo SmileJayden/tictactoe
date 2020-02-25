@@ -5,7 +5,7 @@
 ## Build Setup
 
 ``` bash
-# version
+# version!
 yarn : 1.17.3
 node : 12.16.1
 
