@@ -16,7 +16,7 @@
     },
     "skipLibCheck": true,
     "experimentalDecorators": true,
-    "types": ["@types/node", "@nuxt/types"]
+    "types": ["@types/node", "@nuxt/types", "@nuxtjs/moment"]
   },
   "exclude": ["node_modules"]
 }

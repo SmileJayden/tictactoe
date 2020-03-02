@@ -21,6 +21,7 @@
     "vuex-persist": "^2.2.0"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "^0.5.7"
+    "@nuxt/typescript-build": "^0.5.7",
+    "@nuxtjs/moment": "^1.6.0"
   }
 }
