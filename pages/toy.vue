@@ -9,6 +9,9 @@
     <div>
       <div v-for="(i, j, k) of myArr">{{ i }} {{ j }}{{ k }}</div>
     </div>
+    <div>
+      {{ moment }}
+    </div>
   </div>
 </template>
 
@@ -34,6 +37,10 @@ export default class toy extends Vue {
     console.dir(this);
     console.log('myArr', this.myArr);
   };
+
+  moment = this.$moment();
+  df = this.$forceUpdate()
+
 }
 </script>
 
