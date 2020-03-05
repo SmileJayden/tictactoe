@@ -38,7 +38,8 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['@nuxtjs/axios', '@nuxtjs/proxy'],
+
   /*
    ** Build configuration
    */

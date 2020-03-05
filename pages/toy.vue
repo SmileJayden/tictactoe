@@ -2,6 +2,7 @@
   <div>
     <button @click="onClick">onClick</button>
     <button @click="ArrowOnClick">ArrowOnClick</button>
+    <button @click="AxiosOnClick">AxiosOnClick</button>
     <my-toy class="hih"></my-toy>
     <div>
       <div v-for="(i, j, k, l) of myObj">{{ i }} {{ j }}{{ k }}{{ l }}</div>
@@ -9,15 +10,13 @@
     <div>
       <div v-for="(i, j, k) of myArr">{{ i }} {{ j }}{{ k }}</div>
     </div>
-    <div>
-      {{ moment }}
-    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator';
 import MyToy from '~/components/MyToy.vue';
+import axios from 'axios';
 
 @Component({
   components: { MyToy },
@@ -38,9 +37,10 @@ export default class toy extends Vue {
     console.log('myArr', this.myArr);
   };
 
-  moment = this.$moment();
-  df = this.$forceUpdate()
-
+  AxiosOnClick = async () => {
+    const res = await axios.get('https://www.naver.com');
+    console.log('AxiosOnClick', res);
+  };
 }
 </script>
 
