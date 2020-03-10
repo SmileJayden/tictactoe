@@ -1,3 +1,4 @@
+import { enumColor } from "~/models/Tictactoe";
 <template>
   <div class="container">
     <player-card :player="PlayerA" :score="$store.state.scoreRed" />
@@ -10,17 +11,11 @@
 </template>
 
 <script lang="ts">
-import {
-  Vue,
-  Component,
-  Watch,
-  State,
-  Mutation,
-} from 'nuxt-property-decorator';
+import { Component, Mutation, Vue, Watch } from 'nuxt-property-decorator';
 import PlayerCard from '~/components/PlayerCard.vue';
 import GameTable from '~/components/GameTable.vue';
 import { Player } from '~/models/player';
-import { Cell } from '~/models/Tictactoe';
+import { Cell, enumColor } from '~/models/Tictactoe';
 
 @Component({
   components: { PlayerCard, GameTable },
@@ -48,6 +43,8 @@ export default class Index extends Vue {
   gameRes: string = '';
   dialogVisible: boolean = false;
   dialogMsg: string = '';
+
+  myColor = enumColor.Blue;
 
   cells: Cell[] = [
     {
