@@ -2,7 +2,7 @@
   <div>
     <button @click="addItem">Add Item</button>
     <button @click="add10Item">Add 10 Item</button>
-    <div class="container">
+    <div class="container" id="table-container">
       <div
         class="row"
         v-for="(item, i) in items"
@@ -35,12 +35,16 @@ export default class Infinite extends Vue {
             '화면에 등장 ~!,entry.isIntersecting',
             entry.isIntersecting
           );
+          this.add10Item();
         } else {
           console.log('화면에서 사라짐~!');
         }
       });
     };
-    const ioOption: IntersectionObserverInit = {};
+    const ioOption: IntersectionObserverInit = {
+      root: document.getElementById('table-container'),
+      rootMargin: '0px 0px 1000px 0px',
+    };
     const observer = new IntersectionObserver(ioCallback, ioOption);
     observer.observe(document.getElementById('sentinel')!);
   }
