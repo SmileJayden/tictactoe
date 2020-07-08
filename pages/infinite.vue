@@ -1,12 +1,11 @@
 <template>
   <div>
-    <button @click="addItem">Add Item</button>
     <button @click="add10Item">Add 10 Item</button>
     <div class="container" id="table-container">
       <div
         class="row"
         v-for="(item, i) in items"
-        :style="{ 'background-color': item.color }"
+        :style="{ 'background-color': `${item.color}` }"
       >
         <p>{{ i }} 번째</p>
         <div>{{ item.name }}</div>
@@ -18,11 +17,14 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component } from 'nuxt-property-decorator';
+import { Vue, Component, State, Mutation } from 'nuxt-property-decorator';
 
 @Component
 export default class Infinite extends Vue {
-  items = [this.generateItem(), this.generateItem(), this.generateItem()];
+  @State('items') items!: any[];
+  @State('patients') patients!: any[];
+  @Mutation('updateItems') updateItems!: Function;
+  @Mutation('updatePatients') updatePatients!: Function;
 
   mounted(): void {
     const ioCallback = (
@@ -43,23 +45,33 @@ export default class Infinite extends Vue {
     };
     const ioOption: IntersectionObserverInit = {
       root: document.getElementById('table-container'),
-      rootMargin: '0px 0px 1000px 0px',
+      rootMargin: '0px 0px 300px 0px',
     };
     const observer = new IntersectionObserver(ioCallback, ioOption);
     observer.observe(document.getElementById('sentinel')!);
   }
 
-  addItem(): void {
-    this.items = [...this.items, this.generateItem()];
-  }
+  // addItem(): void {
+  //   this.items = [...this.items, this.generateItem()];
+  // }
 
   add10Item(): void {
-    const newItems = [];
-    for (let i = 0; i < 10; i++) {
-      newItems.push(this.generateItem());
-    }
-    console.log('newItems', newItems);
-    this.items = [...this.items, ...newItems];
+    console.log('add10Item', this.patients);
+    const items = [
+      this.generateItem(),
+      this.generateItem(),
+      this.generateItem(),
+      this.generateItem(),
+      this.generateItem(),
+      this.generateItem(),
+    ];
+    // const newItems = [];
+    // for (let i = 0; i < 10; i++) {
+    //   newItems.push(this.generateItem());
+    // }
+    // console.log('newItems', newItems);
+    // this.items = [...this.items, ...newItems];
+    this.updateItems(items);
   }
 
   generateItem(): object {
@@ -76,13 +88,12 @@ export default class Infinite extends Vue {
 <style scoped lang="scss">
 button {
   width: 300px;
-  height: 200px;
+  height: 100px;
   text-align: center;
 }
 .container {
   text-align: center;
   padding: 30px;
-  margin: 100px;
   border: 20px solid darkkhaki;
   height: 600px;
   overflow-y: auto;
@@ -92,7 +103,7 @@ button {
     justify-content: space-evenly;
     margin: 30px 0;
     align-items: center;
-    color: white;
+    /*color: white;*/
     font-size: 30px;
   }
   #sentinel {

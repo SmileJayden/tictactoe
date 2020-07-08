@@ -1,4 +1,3 @@
-import { enumColor } from "~/models/Tictactoe";
 <template>
   <div class="container">
     <player-card :player="PlayerA" :score="$store.state.scoreRed" />

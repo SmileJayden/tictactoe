@@ -1,34 +1,8 @@
-// import Vue from 'vue';
-// import Vuex, { StoreOptions, MutationTree } from 'vuex';
-//
-// interface RootState {
-//   scoreA: number;
-//   scoreB: number;
-// }
-//
-// Vue.use(Vuex);
-//
-// const store: StoreOptions<RootState> = {
-//   state: {
-//     scoreA: 10,
-//     scoreB: 20,
-//   },
-// };
-//
-// export const mutations: MutationTree<RootState> = {
-//   updateScoreA(state) {
-//     state.scoreA++;
-//   },
-//   updateScoreB(state) {
-//     state.scoreB++;
-//   },
-// };
-//
-// export default () => new Vuex.Store<RootState>(store);
-
 export const state = () => ({
   scoreRed: 0,
   scoreBlue: 0,
+  items: [],
+  patients: [],
 });
 
 export const mutations = {
@@ -37,5 +11,13 @@ export const mutations = {
   },
   incrementBlue(state: any) {
     state.scoreBlue++;
+  },
+  updateItems(state: any, items: any[]) {
+    console.log('updateItems is called');
+    state.items = [...state.items, ...items];
+  },
+  updatePatients(state: any, patients: any[]) {
+    console.log('updatePatients is called');
+    state.patients = [...state.patients, ...patients];
   },
 };
