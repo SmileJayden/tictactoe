@@ -18,6 +18,7 @@
 
 <script lang="ts">
 import { Vue, Component, State, Mutation } from 'nuxt-property-decorator';
+import { patientMock10, patientMock20, patientMock30 } from '~/constant';
 
 @Component
 export default class Infinite extends Vue {
@@ -71,7 +72,17 @@ export default class Infinite extends Vue {
     // }
     // console.log('newItems', newItems);
     // this.items = [...this.items, ...newItems];
+    console.time('update Items');
+
     this.updateItems(items);
+
+    console.timeEnd('update Items');
+
+    console.time('update Patient Mock');
+
+    this.updatePatients(patientMock10);
+
+    console.timeEnd('update Patient Mock');
   }
 
   generateItem(): object {
@@ -103,7 +114,7 @@ button {
     justify-content: space-evenly;
     margin: 30px 0;
     align-items: center;
-    /*color: white;*/
+    color: white;
     font-size: 30px;
   }
   #sentinel {

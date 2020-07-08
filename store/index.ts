@@ -17,7 +17,9 @@ export const mutations = {
     state.items = [...state.items, ...items];
   },
   updatePatients(state: any, patients: any[]) {
-    console.log('updatePatients is called');
+    // console.log('updatePatients is called time:', time.time());
+
     state.patients = [...state.patients, ...patients];
+
   },
 };
