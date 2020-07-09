@@ -18,7 +18,9 @@
 
 <script lang="ts">
 import { Vue, Component, State, Mutation } from 'nuxt-property-decorator';
-import { patientMock10, patientMock20, patientMock30 } from '~/constant';
+import patientMock10 from '@/constants/patient-mock10';
+import patientMock20 from '@/constants/patient-mock20';
+import patientMock30 from '@/constants/patient-mock30';
 
 @Component
 export default class Infinite extends Vue {
