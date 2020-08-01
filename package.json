@@ -21,6 +21,7 @@
     "nuxt": "^2.11.0",
     "nuxt-property-decorator": "^2.5.1",
     "prettier": "^1.19.1",
+    "vue-virtual-scroller": "^1.0.10",
     "vuex-persist": "^2.2.0"
   },
   "devDependencies": {
