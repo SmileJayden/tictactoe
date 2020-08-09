@@ -48,7 +48,12 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {},
+    extend(config, { isClient }) {
+      // 오직 client-bundle을 위한 webpack 설정만을 확장합니다.
+      if (isClient) {
+        config.devtool = 'eval-source-map';
+      }
+    },
   },
   transpileDependencies: ['vuex-persist'],
 };
