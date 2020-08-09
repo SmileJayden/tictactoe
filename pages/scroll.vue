@@ -6,16 +6,18 @@
       v-for="(_, i) of Array(2).fill('')"
       :key="`dumb-key${i}`"
     />
-    <div id="scroll-wrapper" @scroll.passive="scrollHandler">
-      <div id="scroll-padding-top"></div>
-      <table-item
-        v-for="(item, i) of items.slice(startIndex, startIndex + amount)"
-        :color="item.color"
-        :index="item.index"
-        :id="item.uuid"
-        :key="tableItemKey(i)"
-      />
-      <div id="scroll-padding-bottom"></div>
+    <div id="scroll-wrapper" @scroll.passive="onScroll">
+      <div id="scroll-wrapper-viewport">
+        <div id="scroll-wrapper-inner">
+          <table-item
+            v-for="(item, i) of items.slice(startIndex, startIndex + amount)"
+            :color="item.color"
+            :index="item.index"
+            :id="item.uuid"
+            :key="tableItemKey(i)"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -49,11 +51,7 @@ export default class scroll extends Vue {
   }
 
   handleChange() {
-    // this.dumbId = 'after changed';
     this.dumbArray[0].name = 'dirty apple';
-
-    // this.dumbindex += 1;
-    // this.flag = !this.flag;
   }
 
   dumbindex: number = 0;
@@ -61,91 +59,55 @@ export default class scroll extends Vue {
   dumbArray = [{ name: 'apple' }, { name: 'banana' }, { name: 'graph' }];
 
   scrollWrapper: HTMLElement | null = null;
-  scrollPaddingTop: HTMLElement | null = null;
-  scrollPaddingBottom: HTMLElement | null = null;
+  scrollViewportWrapper: HTMLElement | null = null;
+  scrollInnerWrapper: HTMLElement | null = null;
 
   items: any[] = [];
-  showItems: any[] = [];
-
   wrapperHeight: number = 0;
   currPage: number = 0;
   flag: boolean = true;
 
-  minIndex: number = 0;
-  maxIndex: number = 100;
   startIndex: number = 0;
   itemHeight: number = 150;
   amount: number = 10;
-  tolerance: number = 2;
+  bufferCount: number = 5;
 
   totalHeight: number = 0;
-  toleranceHeight: number = 0;
-  bufferHeight: number = 0;
-  bufferedItems: number = 0;
-  paddingTop: number = 0;
-  paddingBottom: number = 0;
   mounted() {
     this.scrollWrapper = document.getElementById('scroll-wrapper');
-    this.scrollPaddingTop = document.getElementById('scroll-padding-top');
-    this.scrollPaddingBottom = document.getElementById('scroll-padding-bottom');
+    this.scrollViewportWrapper = document.getElementById(
+      'scroll-wrapper-viewport'
+    );
+    this.scrollInnerWrapper = document.getElementById('scroll-wrapper-inner');
     this.items = this.getMoreItems();
-    this.wrapperHeight = this.scrollWrapper!.offsetHeight;
-    console.log('this.wrapperHeight', this.wrapperHeight);
-
-    this.totalHeight = (this.maxIndex - this.minIndex) * this.itemHeight;
-    this.toleranceHeight = this.tolerance * this.itemHeight;
-    if (this.scrollPaddingBottom) {
-      this.scrollPaddingBottom.style.height =
-        this.totalHeight - this.wrapperHeight + 'px';
+    if (this.scrollViewportWrapper) {
+      this.scrollViewportWrapper.style.height = this.totalHeight + 'px';
     }
   }
 
-  setHeights(currScroll?: number): void {
-    const itemsAbove = Math.max(this.startIndex - this.minIndex, 0);
-    this.paddingTop = itemsAbove * this.itemHeight;
-    this.paddingBottom =
-      this.totalHeight - this.paddingTop - this.amount * this.itemHeight;
-
-    if (currScroll) {
-    }
-
-    if (this.scrollPaddingTop) {
-      this.scrollPaddingTop.style.height = this.paddingTop + 'px';
-    }
-    // if (this.scrollPaddingBottom) {
-    //   this.scrollPaddingBottom.style.height = this.paddingBottom + 'px';
-    // }
-  }
-
-  // we want to get data [dataOffset ~ dataOffset + limit]
-  getDataIndex(dataOffset: number, limit: number): [number, number] {
-    const start = Math.max(this.minIndex, dataOffset);
-    const end = Math.min(this.maxIndex, dataOffset + limit);
-    return [start, end];
-  }
-
-  scrollHandler($event: UIEvent) {
+  onScroll($event: UIEvent) {
     const scrollTop = ($event.target as HTMLDivElement)!.scrollTop;
 
-    const startIndex = Math.floor(scrollTop / this.itemHeight);
+    requestAnimationFrame(() => {
+      this.onScrollHandler(scrollTop);
+    });
+  }
 
-    if (startIndex !== this.startIndex) {
-      this.startIndex = startIndex;
-      this.paddingTop = this.startIndex * this.itemHeight;
-      if (this.scrollPaddingTop) {
-        this.scrollPaddingTop.style.height = this.paddingTop + 'px';
-      }
-      if (this.scrollPaddingBottom) {
-        this.scrollPaddingBottom.style.height =
-          this.totalHeight -
-          this.items.slice(startIndex, startIndex + this.amount).length *
-            this.itemHeight -
-          this.paddingTop +
-          'px';
-      }
-      if (this.scrollWrapper) {
-        this.scrollWrapper.scrollTo({ top: this.paddingTop });
-      }
+  onScrollHandler(scrollTop: number) {
+    console.log('scrollTop', scrollTop);
+    let startNode = Math.floor(scrollTop / this.itemHeight) - this.bufferCount;
+    startNode = Math.max(0, startNode);
+    let visibleNodeCount =
+      Math.ceil(this.wrapperHeight / this.itemHeight) + 2 * this.bufferCount;
+    visibleNodeCount = Math.min(
+      this.items.length - startNode,
+      visibleNodeCount
+    );
+    this.startIndex = startNode;
+    this.amount = visibleNodeCount;
+    const offsetY = startNode * this.itemHeight;
+    if (this.scrollInnerWrapper) {
+      this.scrollInnerWrapper.style.transform = `translateY(${offsetY}px)`;
     }
   }
 
@@ -171,5 +133,11 @@ export default class scroll extends Vue {
   background-color: #f5f5f5;
   height: 825px;
   overflow: auto;
+}
+#scroll-wrapper-viewport {
+  overflow: hidden;
+}
+#scroll-wrapper-inner {
+  /*will-change: transform;*/
 }
 </style>
