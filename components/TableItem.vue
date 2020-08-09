@@ -16,18 +16,18 @@ export default class TableItem extends Vue {
   @Prop() index!: number;
   @Prop() color!: string;
   @Prop() id!: string;
-  created() {
-    for (let i = 0; i < 10000; i++) {}
-    console.log('table item created');
-  }
-  updated() {
-    for (let i = 0; i < 10000; i++) {}
-    console.log('table item updated');
-  }
-  mounted() {
-    for (let i = 0; i < 10000; i++) {}
-    console.log('table item mounted');
-  }
+  // created() {
+  //   for (let i = 0; i < 10000; i++) {}
+  //   console.log('table item created');
+  // }
+  // updated() {
+  //   for (let i = 0; i < 10000; i++) {}
+  //   console.log('table item updated');
+  // }
+  // mounted() {
+  //   for (let i = 0; i < 10000; i++) {}
+  //   console.log('table item mounted');
+  // }
 }
 </script>
 
