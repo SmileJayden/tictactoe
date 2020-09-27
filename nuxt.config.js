@@ -1,5 +1,4 @@
 export default {
-  mode: 'universal',
   /*
    ** Headers of the page
    */
@@ -29,16 +28,15 @@ export default {
    */
   plugins: [
     '@/plugins/element-ui',
-    { src: '@/plugins/vuex-persist', ssr: false },
   ],
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxt/typescript-build', '@nuxtjs/moment'],
+  buildModules: ['@nuxt/typescript-build'],
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/axios', '@nuxtjs/proxy'],
+  modules: [],
 
   /*
    ** Build configuration
@@ -50,5 +48,4 @@ export default {
      */
     extend(config, ctx) {},
   },
-  transpileDependencies: ['vuex-persist'],
 };

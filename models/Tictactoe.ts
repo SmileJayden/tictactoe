@@ -1,9 +1,8 @@
 export type Color = 'red' | 'blue' | 'white';
 
 export enum enumColor {
-  Red= 3,
-  Green,
-  Blue = 9,
+  Red = 'red',
+  Blue = 'blue',
 }
 
 export interface Cell {
