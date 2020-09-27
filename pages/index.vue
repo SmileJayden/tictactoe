@@ -1,14 +1,27 @@
 <template>
   <div class="container">
-    hihi
+    <p>hello {{ state.hello }}</p>
+    <button @click="setHello">btn</button>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import { defineComponent, reactive } from '@vue/composition-api';
 
-export default Vue.extend({
+export default defineComponent({
   name: 'index',
+  components: {},
+  setup() {
+    const state = reactive({ hello: 'world' });
+    function setHello() {
+      state.hello = 'update world ';
+    }
+    const t = nedw => {
+      console.log(nedw);
+      return '';
+    };
+    return { state, setHello };
+  },
 });
 </script>
 

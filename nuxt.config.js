@@ -26,13 +26,11 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    '@/plugins/element-ui',
-  ],
+  plugins: ['@/plugins/element-ui', '@/plugins/composition'],
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxt/typescript-build'],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/composition-api'],
   /*
    ** Nuxt.js modules
    */
