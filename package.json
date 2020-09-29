@@ -4,5 +4,18 @@
   "main": "index.js",
   "repository": "https://github.com/SmileJayden/tictactoe.git",
   "author": "SmileJayden <wkdwodud07@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server"
+  },
+  "dependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^4.5.0",
+    "prettier": "^2.1.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
