@@ -8,6 +8,11 @@ const config = {
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
   },
+  resolve: {
+    alias: {
+      vue: 'vue/dist/vue.esm-bundler.js', // wtf... why should I doing this??
+    },
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
