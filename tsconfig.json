@@ -9,7 +9,7 @@
     "esModuleInterop": true,
     "moduleResolution": "Node",
     "baseUrl": "./",
-    "paths": { "@/*": ["./*"] }
+    "paths": { "@src/*": ["./src/*"] }
   },
   "include": ["index.ts", "src"],
   "exclude": ["node_modules"]

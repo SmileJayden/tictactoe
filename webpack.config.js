@@ -34,6 +34,7 @@ const config = {
   resolve: {
     alias: {
       vue: 'vue/dist/vue.esm-bundler.js', // wtf... why should I doing this??
+      '@src': path.resolve(__dirname, 'src'),
     },
     extensions: ['.vue', '.ts', '.js'],
   },
