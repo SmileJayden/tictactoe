@@ -6,19 +6,19 @@
   </div>
 </template>
 
-<script>
-import { reactive } from 'vue';
+<script lang="ts">
+import { reactive, defineComponent } from 'vue';
 
-export default {
+export default defineComponent({
   name: 'App',
   setup() {
     const state = reactive({ count: 0 });
-    function increase() {
+    function increase(): void {
       state.count++;
     }
     return { state, increase };
   },
-};
+});
 </script>
 
 <style scoped lang="scss">

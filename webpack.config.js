@@ -4,7 +4,8 @@ const { VueLoaderPlugin } = require('vue-loader');
 
 const config = {
   mode: 'development',
-  entry: './index.js',
+  entry: './index.ts',
+  devtool: 'inline-source-map',
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
@@ -16,8 +17,16 @@ const config = {
         loader: 'vue-loader',
       },
       {
+        test: /\.ts?$/,
+        loader: 'ts-loader',
+        exclude: /node_modules/,
+        options: {
+          appendTsSuffixTo: [/\.vue$/],
+        },
+      },
+      {
         test: /\.(c|sc)ss$/,
-        loader: ['style-loader','css-loader', 'sass-loader'],
+        loader: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
@@ -26,6 +35,7 @@ const config = {
     alias: {
       vue: 'vue/dist/vue.esm-bundler.js', // wtf... why should I doing this??
     },
+    extensions: ['.vue', '.ts', '.js'],
   },
   plugins: [
     new HtmlWebpackPlugin({

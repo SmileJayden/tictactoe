@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "module": "es6",
+    "target": "es5",
+    "strict": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "baseUrl": "./",
+    "paths": { "@/*": ["./*"] }
+  },
+  "include": ["index.ts", "src"],
+  "exclude": ["node_modules"]
+}
