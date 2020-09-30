@@ -1,15 +1,17 @@
 <template>
   <div>
     <div class="hihi">hello vue vue Single-File-Component</div>
-    <p>{{ state.count }}</p>
+    <p>{{ score }}</p>
     <child />
-    <button @click="increase">button</button>
+    <button @click="increase">inc</button>
+    <button @click="decrease">dec</button>
   </div>
 </template>
 
 <script lang="ts">
-import { reactive, defineComponent } from 'vue';
-import Child from '@src/Child.vue';
+import { defineComponent } from 'vue';
+import { useScore } from './hooks';
+import Child from './Child.vue';
 
 export default defineComponent({
   name: 'App',
@@ -17,11 +19,8 @@ export default defineComponent({
     Child,
   },
   setup() {
-    const state = reactive({ count: 0 });
-    function increase(): void {
-      state.count++;
-    }
-    return { state, increase };
+    const { score, increase, decrease } = useScore();
+    return { score, increase, decrease };
   },
 });
 </script>

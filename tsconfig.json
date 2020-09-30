@@ -1,16 +1,14 @@
 {
   "compilerOptions": {
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "sourceMap": true,
-    "module": "es6",
-    "target": "es5",
-    "strict": true,
-    "allowJs": true,
-    "esModuleInterop": true,
+    "module": "esnext", // what different with moduleResolution?
     "moduleResolution": "Node",
-    "baseUrl": "./",
-    "paths": { "@src/*": ["./src/*"] }
+    "target": "es6",
+    "lib": ["es2020", "dom"],
+    "strict": true
   },
-  "include": ["index.ts", "src"],
+  "files": ["./shims.d.ts", "./src/hooks.ts"],
+  "include": ["./src/**/*.vue", "./src/**/*.ts"],
   "exclude": ["node_modules"]
 }

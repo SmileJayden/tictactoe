@@ -4,7 +4,7 @@ const { VueLoaderPlugin } = require('vue-loader');
 
 const config = {
   mode: 'development',
-  entry: './index.ts',
+  entry: './index.js',
   devtool: 'inline-source-map',
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -17,7 +17,7 @@ const config = {
         loader: 'vue-loader',
       },
       {
-        test: /\.ts?$/,
+        test: /\.tsx?$/,
         loader: 'ts-loader',
         exclude: /node_modules/,
         options: {
@@ -34,7 +34,6 @@ const config = {
   resolve: {
     alias: {
       vue: 'vue/dist/vue.esm-bundler.js', // wtf... why should I doing this??
-      '@src': path.resolve(__dirname, 'src'),
     },
     extensions: ['.vue', '.ts', '.js'],
   },

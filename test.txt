@@ -1,0 +1,1287 @@
+======== Resolving module 'vue' from '/Users/changjaeyoung/Desktop/tictactoe/shims.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'vue' from 'node_modules' folder, target file type 'TypeScript'.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vue/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vue.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vue.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vue.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'dist/vue.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vue/dist/vue.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vue/dist/vue.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vue/dist/vue.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vue/dist/vue.d.ts'.
+======== Module name 'vue' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vue/dist/vue.d.ts' with Package ID 'vue/dist/vue.d.ts@3.0.0'. ========
+======== Resolving module '@vue/compiler-dom' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vue/dist/vue.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module '@vue/compiler-dom' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vue/dist/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__compiler-dom'
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vue/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__compiler-dom'
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-dom/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-dom.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-dom.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-dom.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'dist/compiler-dom.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-dom/dist/compiler-dom.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-dom/dist/compiler-dom.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-dom/dist/compiler-dom.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-dom/dist/compiler-dom.d.ts'.
+======== Module name '@vue/compiler-dom' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-dom/dist/compiler-dom.d.ts' with Package ID '@vue/compiler-dom/dist/compiler-dom.d.ts@3.0.0'. ========
+======== Resolving module '@vue/runtime-dom' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vue/dist/vue.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module '@vue/runtime-dom' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vue/dist/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__runtime-dom'
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vue/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__runtime-dom'
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'dist/runtime-dom.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts'.
+======== Module name '@vue/runtime-dom' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts' with Package ID '@vue/runtime-dom/dist/runtime-dom.d.ts@3.0.0'. ========
+======== Resolving module '@vue/compiler-core' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-dom/dist/compiler-dom.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module '@vue/compiler-core' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-dom/dist/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__compiler-core'
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-dom/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__compiler-core'
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__compiler-core'
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'dist/compiler-core.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/dist/compiler-core.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/dist/compiler-core.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/dist/compiler-core.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/dist/compiler-core.d.ts'.
+======== Module name '@vue/compiler-core' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/dist/compiler-core.d.ts' with Package ID '@vue/compiler-core/dist/compiler-core.d.ts@3.0.0'. ========
+======== Resolving module '@vue/shared' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/dist/compiler-core.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module '@vue/shared' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/dist/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__shared'
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/node_modules/@types' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__shared'
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__shared'
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/shared/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/shared.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/shared.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/shared.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'dist/shared.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/shared/dist/shared.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/shared/dist/shared.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/shared/dist/shared.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/shared/dist/shared.d.ts'.
+======== Module name '@vue/shared' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/shared/dist/shared.d.ts' with Package ID '@vue/shared/dist/shared.d.ts@3.0.0'. ========
+======== Resolving module '@babel/parser' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/dist/compiler-core.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module '@babel/parser' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/dist/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'babel__parser'
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/node_modules/@types' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'babel__parser'
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'babel__parser'
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/parser/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/parser.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/parser.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/parser.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'typings/babel-parser.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/parser/typings/babel-parser.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/parser/typings/babel-parser.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/parser/typings/babel-parser.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/parser/typings/babel-parser.d.ts'.
+======== Module name '@babel/parser' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/parser/typings/babel-parser.d.ts' with Package ID '@babel/parser/typings/babel-parser.d.ts@7.11.5'. ========
+======== Resolving module 'source-map' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/dist/compiler-core.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'source-map' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/dist/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/node_modules/source-map.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/node_modules/source-map.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/node_modules/source-map.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/compiler-core/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map.d.ts' does not exist.
+'package.json' has 'typings' field 'source-map' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map' does not exist.
+Loading module as file / folder, candidate module location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map', target file type 'TypeScript'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map.d.ts'.
+======== Module name 'source-map' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map.d.ts' with Package ID 'source-map/source-map.d.ts@0.6.1'. ========
+======== Resolving module '@babel/types' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/parser/typings/babel-parser.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module '@babel/types' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/parser/typings/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'babel__types'
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/parser/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'babel__types'
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'babel__types'
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/types/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/types.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/types.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/types.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'lib/index.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/types/lib/index.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/types/lib/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/types/lib/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/types/lib/index.d.ts'.
+======== Module name '@babel/types' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@babel/types/lib/index.d.ts' with Package ID '@babel/types/lib/index.d.ts@7.11.5'. ========
+======== Resolving module '@vue/runtime-core' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module '@vue/runtime-core' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom/dist/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__runtime-core'
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__runtime-core'
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__runtime-core'
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-core/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-core.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-core.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-core.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'dist/runtime-core.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-core/dist/runtime-core.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-core/dist/runtime-core.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-core/dist/runtime-core.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-core/dist/runtime-core.d.ts'.
+======== Module name '@vue/runtime-core' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-core/dist/runtime-core.d.ts' with Package ID '@vue/runtime-core/dist/runtime-core.d.ts@3.0.0'. ========
+======== Resolving module 'csstype' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'csstype' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom/dist/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/csstype/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/csstype.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/csstype.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/csstype.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/csstype/index.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/csstype/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/csstype/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/csstype/index.d.ts'.
+======== Module name 'csstype' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/csstype/index.d.ts' with Package ID 'csstype/index.d.ts@2.6.13'. ========
+======== Resolving module '@vue/reactivity' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module '@vue/reactivity' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom/dist/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__reactivity'
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-dom/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__reactivity'
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__reactivity'
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/reactivity/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/reactivity.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/reactivity.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/reactivity.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'dist/reactivity.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/reactivity/dist/reactivity.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/reactivity/dist/reactivity.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/reactivity/dist/reactivity.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/reactivity/dist/reactivity.d.ts'.
+======== Module name '@vue/reactivity' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/reactivity/dist/reactivity.d.ts' with Package ID '@vue/reactivity/dist/reactivity.d.ts@3.0.0'. ========
+======== Resolving module '@vue/shared' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-core/dist/runtime-core.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module '@vue/shared' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-core/dist/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__shared'
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-core/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__shared'
+Resolution for module '@vue/shared' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue'.
+======== Module name '@vue/shared' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/shared/dist/shared.d.ts' with Package ID '@vue/shared/dist/shared.d.ts@3.0.0'. ========
+======== Resolving module '@vue/reactivity' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-core/dist/runtime-core.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module '@vue/reactivity' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-core/dist/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__reactivity'
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/runtime-core/node_modules' does not exist, skipping all lookups in it.
+Scoped package detected, looking in 'vue__reactivity'
+Resolution for module '@vue/reactivity' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue'.
+======== Module name '@vue/reactivity' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@vue/reactivity/dist/reactivity.d.ts' with Package ID '@vue/reactivity/dist/reactivity.d.ts@3.0.0'. ========
+======== Resolving module 'vue' from '/Users/changjaeyoung/Desktop/tictactoe/src/hooks.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'vue' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/src/node_modules' does not exist, skipping all lookups in it.
+Resolution for module 'vue' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe'.
+======== Module name 'vue' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vue/dist/vue.d.ts' with Package ID 'vue/dist/vue.d.ts@3.0.0'. ========
+======== Resolving type reference directive 'anymatch', containing file '/Users/changjaeyoung/Desktop/tictactoe/__inferred type names__.ts', root directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'. ========
+Resolving with primary search path '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index' does not exist.
+Loading module as file / folder, candidate module location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index', target file type 'TypeScript'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index.d.ts'.
+======== Type reference directive 'anymatch' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index.d.ts' with Package ID '@types/anymatch/index.d.ts@1.3.1', primary: true. ========
+======== Resolving type reference directive 'color-name', containing file '/Users/changjaeyoung/Desktop/tictactoe/__inferred type names__.ts', root directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'. ========
+Resolving with primary search path '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/color-name/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/color-name/index'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/color-name/index' does not exist.
+Loading module as file / folder, candidate module location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/color-name/index', target file type 'TypeScript'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/color-name/index.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/color-name/index.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/color-name/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/color-name/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/color-name/index.d.ts'.
+======== Type reference directive 'color-name' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/color-name/index.d.ts' with Package ID '@types/color-name/index.d.ts@1.1.1', primary: true. ========
+======== Resolving type reference directive 'glob', containing file '/Users/changjaeyoung/Desktop/tictactoe/__inferred type names__.ts', root directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'. ========
+Resolving with primary search path '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/glob/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/glob/index.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/glob/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/glob/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/glob/index.d.ts'.
+======== Type reference directive 'glob' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/glob/index.d.ts' with Package ID '@types/glob/index.d.ts@7.1.3', primary: true. ========
+======== Resolving type reference directive 'html-minifier-terser', containing file '/Users/changjaeyoung/Desktop/tictactoe/__inferred type names__.ts', root directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'. ========
+Resolving with primary search path '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/html-minifier-terser/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/html-minifier-terser/index.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/html-minifier-terser/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/html-minifier-terser/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/html-minifier-terser/index.d.ts'.
+======== Type reference directive 'html-minifier-terser' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/html-minifier-terser/index.d.ts' with Package ID '@types/html-minifier-terser/index.d.ts@5.1.1', primary: true. ========
+======== Resolving type reference directive 'json-schema', containing file '/Users/changjaeyoung/Desktop/tictactoe/__inferred type names__.ts', root directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'. ========
+Resolving with primary search path '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/json-schema/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/json-schema/index.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/json-schema/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/json-schema/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/json-schema/index.d.ts'.
+======== Type reference directive 'json-schema' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/json-schema/index.d.ts' with Package ID '@types/json-schema/index.d.ts@7.0.6', primary: true. ========
+======== Resolving type reference directive 'minimatch', containing file '/Users/changjaeyoung/Desktop/tictactoe/__inferred type names__.ts', root directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'. ========
+Resolving with primary search path '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/minimatch/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/minimatch/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/minimatch/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/minimatch/index.d.ts'.
+======== Type reference directive 'minimatch' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/minimatch/index.d.ts' with Package ID '@types/minimatch/index.d.ts@3.0.3', primary: true. ========
+======== Resolving type reference directive 'node', containing file '/Users/changjaeyoung/Desktop/tictactoe/__inferred type names__.ts', root directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'. ========
+Resolving with primary search path '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/package.json'.
+'package.json' has a 'typesVersions' field with version-specific path mappings.
+'package.json' does not have a 'typesVersions' entry that matches version '4.0'.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts'.
+======== Type reference directive 'node' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts' with Package ID '@types/node/index.d.ts@14.11.2', primary: true. ========
+======== Resolving type reference directive 'source-list-map', containing file '/Users/changjaeyoung/Desktop/tictactoe/__inferred type names__.ts', root directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'. ========
+Resolving with primary search path '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/source-list-map/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/source-list-map/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/source-list-map/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/source-list-map/index.d.ts'.
+======== Type reference directive 'source-list-map' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/source-list-map/index.d.ts' with Package ID '@types/source-list-map/index.d.ts@0.1.2', primary: true. ========
+======== Resolving type reference directive 'tapable', containing file '/Users/changjaeyoung/Desktop/tictactoe/__inferred type names__.ts', root directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'. ========
+Resolving with primary search path '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/tapable/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/tapable/index.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/tapable/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/tapable/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/tapable/index.d.ts'.
+======== Type reference directive 'tapable' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/tapable/index.d.ts' with Package ID '@types/tapable/index.d.ts@1.0.6', primary: true. ========
+======== Resolving type reference directive 'uglify-js', containing file '/Users/changjaeyoung/Desktop/tictactoe/__inferred type names__.ts', root directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'. ========
+Resolving with primary search path '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/uglify-js/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/uglify-js/index.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/uglify-js/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/uglify-js/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/uglify-js/index.d.ts'.
+======== Type reference directive 'uglify-js' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/uglify-js/index.d.ts' with Package ID '@types/uglify-js/index.d.ts@3.9.3', primary: true. ========
+======== Resolving type reference directive 'webpack', containing file '/Users/changjaeyoung/Desktop/tictactoe/__inferred type names__.ts', root directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'. ========
+Resolving with primary search path '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/index.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/index.d.ts'.
+======== Type reference directive 'webpack' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/index.d.ts' with Package ID '@types/webpack/index.d.ts@4.41.22', primary: true. ========
+======== Resolving type reference directive 'webpack-sources', containing file '/Users/changjaeyoung/Desktop/tictactoe/__inferred type names__.ts', root directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'. ========
+Resolving with primary search path '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/package.json'.
+'package.json' does not have a 'typesVersions' field.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/index.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/index.d.ts'.
+======== Type reference directive 'webpack-sources' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/index.d.ts' with Package ID '@types/webpack-sources/index.d.ts@1.4.2', primary: true. ========
+======== Resolving type reference directive 'node', containing file '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/glob/index.d.ts', root directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'. ========
+Resolving with primary search path '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/package.json'.
+'package.json' has a 'typesVersions' field with version-specific path mappings.
+'package.json' does not have a 'typesVersions' entry that matches version '4.0'.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts'.
+======== Type reference directive 'node' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts' with Package ID '@types/node/index.d.ts@14.11.2', primary: true. ========
+======== Resolving module 'fs' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/child_process.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'fs' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/fs.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/fs.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/fs.d.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/fs.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/fs.ts' does not exist.
+File '/Users/changjaeyoung/node_modules/fs.tsx' does not exist.
+File '/Users/changjaeyoung/node_modules/fs.d.ts' does not exist.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'fs' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/fs.js' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/fs.jsx' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/fs.js' does not exist.
+File '/Users/changjaeyoung/node_modules/fs.jsx' does not exist.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+======== Module name 'fs' was not resolved. ========
+======== Resolving module 'events' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/child_process.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'events' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+'package.json' has 'main' field './events.js' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' exist - use it as a name resolution result.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' has an unsupported extension, so skipping it.
+Loading module as file / folder, candidate module location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js', target file type 'TypeScript'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js.d.ts' does not exist.
+File name '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' has a '.js' extension - stripping it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/index.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/index.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/index.d.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/events.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/events.ts' does not exist.
+File '/Users/changjaeyoung/node_modules/events.tsx' does not exist.
+File '/Users/changjaeyoung/node_modules/events.d.ts' does not exist.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'events' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events.js' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events.jsx' does not exist.
+'package.json' has 'main' field './events.js' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js'.
+======== Module name 'events' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' with Package ID 'events/events.js@3.2.0'. ========
+======== Resolving module 'net' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/child_process.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'net' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/net.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/net.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/net.d.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/net.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/net.ts' does not exist.
+File '/Users/changjaeyoung/node_modules/net.tsx' does not exist.
+File '/Users/changjaeyoung/node_modules/net.d.ts' does not exist.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'net' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/net.js' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/net.jsx' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/net.js' does not exist.
+File '/Users/changjaeyoung/node_modules/net.jsx' does not exist.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+======== Module name 'net' was not resolved. ========
+======== Resolving module 'stream' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/child_process.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'stream' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/stream.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/stream.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/stream.d.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/stream.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/stream.ts' does not exist.
+File '/Users/changjaeyoung/node_modules/stream.tsx' does not exist.
+File '/Users/changjaeyoung/node_modules/stream.d.ts' does not exist.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'stream' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/stream.js' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/stream.jsx' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/stream.js' does not exist.
+File '/Users/changjaeyoung/node_modules/stream.jsx' does not exist.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+======== Module name 'stream' was not resolved. ========
+======== Resolving module 'child_process' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/cluster.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'child_process' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/child_process.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/child_process.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/child_process.d.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/child_process.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/child_process.ts' does not exist.
+File '/Users/changjaeyoung/node_modules/child_process.tsx' does not exist.
+File '/Users/changjaeyoung/node_modules/child_process.d.ts' does not exist.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'child_process' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/child_process.js' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/child_process.jsx' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/child_process.js' does not exist.
+File '/Users/changjaeyoung/node_modules/child_process.jsx' does not exist.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+======== Module name 'child_process' was not resolved. ========
+======== Resolving module 'events' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/cluster.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' with Package ID 'events/events.js@3.2.0'. ========
+======== Resolving module 'net' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/cluster.d.ts'. ========
+Resolution for module 'net' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'net' was not resolved. ========
+======== Resolving module 'util' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/console.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'util' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+'package.json' has 'main' field './util.js' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.js'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.js' exist - use it as a name resolution result.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.js' has an unsupported extension, so skipping it.
+Loading module as file / folder, candidate module location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.js', target file type 'TypeScript'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.js.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.js.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.js.d.ts' does not exist.
+File name '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.js' has a '.js' extension - stripping it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.js' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/index.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/index.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/index.d.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/util.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/util.ts' does not exist.
+File '/Users/changjaeyoung/node_modules/util.tsx' does not exist.
+File '/Users/changjaeyoung/node_modules/util.d.ts' does not exist.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'util' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util.js' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util.jsx' does not exist.
+'package.json' has 'main' field './util.js' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.js'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.js' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.js', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.js'.
+======== Module name 'util' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.js' with Package ID 'util/util.js@0.11.1'. ========
+======== Resolving module 'os' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/constants.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'os' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/os.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/os.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/os.d.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/os.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/os.ts' does not exist.
+File '/Users/changjaeyoung/node_modules/os.tsx' does not exist.
+File '/Users/changjaeyoung/node_modules/os.d.ts' does not exist.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'os' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/os.js' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/os.jsx' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/os.js' does not exist.
+File '/Users/changjaeyoung/node_modules/os.jsx' does not exist.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+======== Module name 'os' was not resolved. ========
+======== Resolving module 'crypto' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/constants.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'crypto' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/crypto.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/crypto.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/crypto.d.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/crypto.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/crypto.ts' does not exist.
+File '/Users/changjaeyoung/node_modules/crypto.tsx' does not exist.
+File '/Users/changjaeyoung/node_modules/crypto.d.ts' does not exist.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'crypto' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/crypto.js' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/crypto.jsx' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/crypto.js' does not exist.
+File '/Users/changjaeyoung/node_modules/crypto.jsx' does not exist.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+======== Module name 'crypto' was not resolved. ========
+======== Resolving module 'fs' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/constants.d.ts'. ========
+Resolution for module 'fs' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'fs' was not resolved. ========
+======== Resolving module 'stream' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/crypto.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'stream' was not resolved. ========
+======== Resolving module 'net' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/dgram.d.ts'. ========
+Resolution for module 'net' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'net' was not resolved. ========
+======== Resolving module 'dns' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/dgram.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'dns' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/dns.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/dns.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/dns.d.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/dns.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/dns.ts' does not exist.
+File '/Users/changjaeyoung/node_modules/dns.tsx' does not exist.
+File '/Users/changjaeyoung/node_modules/dns.d.ts' does not exist.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'dns' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/dns.js' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/dns.jsx' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/dns.js' does not exist.
+File '/Users/changjaeyoung/node_modules/dns.jsx' does not exist.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+======== Module name 'dns' was not resolved. ========
+======== Resolving module 'events' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/dgram.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' with Package ID 'events/events.js@3.2.0'. ========
+======== Resolving module 'events' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/domain.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' with Package ID 'events/events.js@3.2.0'. ========
+======== Resolving module 'stream' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/fs.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'stream' was not resolved. ========
+======== Resolving module 'events' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/fs.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' with Package ID 'events/events.js@3.2.0'. ========
+======== Resolving module 'url' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/fs.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'url' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+'package.json' has 'main' field './url.js' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js' exist - use it as a name resolution result.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js' has an unsupported extension, so skipping it.
+Loading module as file / folder, candidate module location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js', target file type 'TypeScript'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js.d.ts' does not exist.
+File name '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js' has a '.js' extension - stripping it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/index.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/index.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/index.d.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/url.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/url.ts' does not exist.
+File '/Users/changjaeyoung/node_modules/url.tsx' does not exist.
+File '/Users/changjaeyoung/node_modules/url.d.ts' does not exist.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'url' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url.js' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url.jsx' does not exist.
+'package.json' has 'main' field './url.js' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js'.
+======== Module name 'url' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js' with Package ID 'url/url.js@0.11.0'. ========
+======== Resolving module 'fs/promises' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/fs.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'fs/promises' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'fs/promises' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+======== Module name 'fs/promises' was not resolved. ========
+======== Resolving module 'fs' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/fs/promises.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'fs' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/fs/node_modules' does not exist, skipping all lookups in it.
+Resolution for module 'fs' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'fs' was not resolved. ========
+======== Resolving module 'stream' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/http.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'stream' was not resolved. ========
+======== Resolving module 'url' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/http.d.ts'. ========
+Resolution for module 'url' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'url' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js' with Package ID 'url/url.js@0.11.0'. ========
+======== Resolving module 'net' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/http.d.ts'. ========
+Resolution for module 'net' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'net' was not resolved. ========
+======== Resolving module 'events' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/http2.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' with Package ID 'events/events.js@3.2.0'. ========
+======== Resolving module 'fs' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/http2.d.ts'. ========
+Resolution for module 'fs' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'fs' was not resolved. ========
+======== Resolving module 'net' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/http2.d.ts'. ========
+Resolution for module 'net' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'net' was not resolved. ========
+======== Resolving module 'stream' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/http2.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'stream' was not resolved. ========
+======== Resolving module 'tls' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/http2.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'tls' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tls.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tls.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tls.d.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/tls.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/tls.ts' does not exist.
+File '/Users/changjaeyoung/node_modules/tls.tsx' does not exist.
+File '/Users/changjaeyoung/node_modules/tls.d.ts' does not exist.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'tls' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tls.js' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tls.jsx' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/tls.js' does not exist.
+File '/Users/changjaeyoung/node_modules/tls.jsx' does not exist.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+======== Module name 'tls' was not resolved. ========
+======== Resolving module 'url' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/http2.d.ts'. ========
+Resolution for module 'url' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'url' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js' with Package ID 'url/url.js@0.11.0'. ========
+======== Resolving module 'http' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/http2.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'http' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/http.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/http.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/http.d.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/http.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/http.ts' does not exist.
+File '/Users/changjaeyoung/node_modules/http.tsx' does not exist.
+File '/Users/changjaeyoung/node_modules/http.d.ts' does not exist.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'http' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/http.js' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/http.jsx' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/http.js' does not exist.
+File '/Users/changjaeyoung/node_modules/http.jsx' does not exist.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+======== Module name 'http' was not resolved. ========
+======== Resolving module 'tls' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/https.d.ts'. ========
+Resolution for module 'tls' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'tls' was not resolved. ========
+======== Resolving module 'events' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/https.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' with Package ID 'events/events.js@3.2.0'. ========
+======== Resolving module 'http' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/https.d.ts'. ========
+Resolution for module 'http' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'http' was not resolved. ========
+======== Resolving module 'url' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/https.d.ts'. ========
+Resolution for module 'url' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'url' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js' with Package ID 'url/url.js@0.11.0'. ========
+======== Resolving module 'events' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/inspector.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' with Package ID 'events/events.js@3.2.0'. ========
+======== Resolving module 'url' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/module.d.ts'. ========
+Resolution for module 'url' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'url' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js' with Package ID 'url/url.js@0.11.0'. ========
+======== Resolving module 'stream' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/net.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'stream' was not resolved. ========
+======== Resolving module 'events' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/net.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' with Package ID 'events/events.js@3.2.0'. ========
+======== Resolving module 'dns' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/net.d.ts'. ========
+Resolution for module 'dns' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'dns' was not resolved. ========
+======== Resolving module 'async_hooks' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/perf_hooks.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'async_hooks' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/async_hooks.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/async_hooks.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/async_hooks.d.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/async_hooks.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/async_hooks.ts' does not exist.
+File '/Users/changjaeyoung/node_modules/async_hooks.tsx' does not exist.
+File '/Users/changjaeyoung/node_modules/async_hooks.d.ts' does not exist.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'async_hooks' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/async_hooks.js' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/async_hooks.jsx' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/async_hooks.js' does not exist.
+File '/Users/changjaeyoung/node_modules/async_hooks.jsx' does not exist.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+======== Module name 'async_hooks' was not resolved. ========
+======== Resolving module 'tty' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/process.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'tty' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tty.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tty.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tty.d.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/tty.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/tty.ts' does not exist.
+File '/Users/changjaeyoung/node_modules/tty.tsx' does not exist.
+File '/Users/changjaeyoung/node_modules/tty.d.ts' does not exist.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'tty' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tty.js' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tty.jsx' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/tty.js' does not exist.
+File '/Users/changjaeyoung/node_modules/tty.jsx' does not exist.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+======== Module name 'tty' was not resolved. ========
+======== Resolving module 'events' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/readline.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' with Package ID 'events/events.js@3.2.0'. ========
+======== Resolving module 'stream' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/readline.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'stream' was not resolved. ========
+======== Resolving module 'readline' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/repl.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'readline' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/readline.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/readline.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/readline.d.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/readline.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/readline.ts' does not exist.
+File '/Users/changjaeyoung/node_modules/readline.tsx' does not exist.
+File '/Users/changjaeyoung/node_modules/readline.d.ts' does not exist.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'readline' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/readline.js' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/readline.jsx' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/readline.js' does not exist.
+File '/Users/changjaeyoung/node_modules/readline.jsx' does not exist.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+======== Module name 'readline' was not resolved. ========
+======== Resolving module 'vm' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/repl.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'vm' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vm.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vm.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vm.d.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/vm.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/vm.ts' does not exist.
+File '/Users/changjaeyoung/node_modules/vm.tsx' does not exist.
+File '/Users/changjaeyoung/node_modules/vm.d.ts' does not exist.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'vm' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vm.js' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/vm.jsx' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/vm.js' does not exist.
+File '/Users/changjaeyoung/node_modules/vm.jsx' does not exist.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+======== Module name 'vm' was not resolved. ========
+======== Resolving module 'util' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/repl.d.ts'. ========
+Resolution for module 'util' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'util' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/util/util.js' with Package ID 'util/util.js@0.11.1'. ========
+======== Resolving module 'events' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/stream.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' with Package ID 'events/events.js@3.2.0'. ========
+======== Resolving module 'crypto' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/tls.d.ts'. ========
+Resolution for module 'crypto' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'crypto' was not resolved. ========
+======== Resolving module 'dns' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/tls.d.ts'. ========
+Resolution for module 'dns' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'dns' was not resolved. ========
+======== Resolving module 'net' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/tls.d.ts'. ========
+Resolution for module 'net' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'net' was not resolved. ========
+======== Resolving module 'stream' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/tls.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'stream' was not resolved. ========
+======== Resolving module 'net' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/tty.d.ts'. ========
+Resolution for module 'net' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'net' was not resolved. ========
+======== Resolving module 'querystring' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/url.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'querystring' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/querystring/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/querystring.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/querystring.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/querystring.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+'package.json' does not have a 'main' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/querystring/index.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/querystring/index.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/querystring/index.d.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/querystring.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/node_modules/querystring.ts' does not exist.
+File '/Users/changjaeyoung/node_modules/querystring.tsx' does not exist.
+File '/Users/changjaeyoung/node_modules/querystring.d.ts' does not exist.
+Directory '/Users/changjaeyoung/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/node_modules' does not exist, skipping all lookups in it.
+Directory '/node_modules' does not exist, skipping all lookups in it.
+Loading module 'querystring' from 'node_modules' folder, target file type 'JavaScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/querystring/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/querystring.js' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/querystring.jsx' does not exist.
+'package.json' does not have a 'main' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/querystring/index.js' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/querystring/index.js', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/querystring/index.js'.
+======== Module name 'querystring' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/querystring/index.js' with Package ID 'querystring/index.js@0.2.0'. ========
+======== Resolving module 'stream' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/v8.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'stream' was not resolved. ========
+======== Resolving module 'vm' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/worker_threads.d.ts'. ========
+Resolution for module 'vm' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'vm' was not resolved. ========
+======== Resolving module 'events' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/worker_threads.d.ts'. ========
+Resolution for module 'events' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'events' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' with Package ID 'events/events.js@3.2.0'. ========
+======== Resolving module 'stream' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/worker_threads.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'stream' was not resolved. ========
+======== Resolving module 'url' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/worker_threads.d.ts'. ========
+Resolution for module 'url' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'url' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/url/url.js' with Package ID 'url/url.js@0.11.0'. ========
+======== Resolving module 'stream' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/zlib.d.ts'. ========
+Resolution for module 'stream' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node'.
+======== Module name 'stream' was not resolved. ========
+======== Resolving module 'events' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/glob/index.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'events' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/glob/node_modules' does not exist, skipping all lookups in it.
+Resolution for module 'events' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+======== Module name 'events' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/events/events.js' with Package ID 'events/events.js@3.2.0'. ========
+======== Resolving module 'minimatch' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/glob/index.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'minimatch' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/glob/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+'package.json' has 'main' field 'minimatch.js' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch/minimatch.js'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch/minimatch.js' exist - use it as a name resolution result.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch/minimatch.js' has an unsupported extension, so skipping it.
+Loading module as file / folder, candidate module location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch/minimatch.js', target file type 'TypeScript'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch/minimatch.js.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch/minimatch.js.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch/minimatch.js.d.ts' does not exist.
+File name '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch/minimatch.js' has a '.js' extension - stripping it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch/minimatch.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch/minimatch.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch/minimatch.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch/minimatch.js' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch/index.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch/index.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/minimatch/index.d.ts' does not exist.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/minimatch/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/minimatch.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/minimatch/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/minimatch/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/minimatch/index.d.ts'.
+======== Module name 'minimatch' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/minimatch/index.d.ts' with Package ID '@types/minimatch/index.d.ts@3.0.3'. ========
+======== Resolving module 'source-map' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/uglify-js/index.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'source-map' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/uglify-js/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map.d.ts' does not exist.
+'package.json' has 'typings' field 'source-map' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map' does not exist.
+Loading module as file / folder, candidate module location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map', target file type 'TypeScript'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map.d.ts'.
+======== Module name 'source-map' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map.d.ts' with Package ID 'source-map/source-map.d.ts@0.6.1'. ========
+======== Resolving type reference directive 'node', containing file '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/index.d.ts', root directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'. ========
+Resolving with primary search path '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/package.json'.
+'package.json' has a 'typesVersions' field with version-specific path mappings.
+'package.json' does not have a 'typesVersions' entry that matches version '4.0'.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts'.
+======== Type reference directive 'node' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts' with Package ID '@types/node/index.d.ts@14.11.2', primary: true. ========
+======== Resolving module 'crypto' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/index.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'crypto' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/node_modules' does not exist, skipping all lookups in it.
+Resolution for module 'crypto' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+======== Module name 'crypto' was not resolved. ========
+======== Resolving module 'tapable' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/index.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'tapable' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+'package.json' has 'main' field 'lib/index.js' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable/lib/index.js'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable/lib/index.js' exist - use it as a name resolution result.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable/lib/index.js' has an unsupported extension, so skipping it.
+Loading module as file / folder, candidate module location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable/lib/index.js', target file type 'TypeScript'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable/lib/index.js.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable/lib/index.js.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable/lib/index.js.d.ts' does not exist.
+File name '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable/lib/index.js' has a '.js' extension - stripping it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable/lib/index.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable/lib/index.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable/lib/index.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable/lib/index.js' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable/index.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable/index.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/tapable/index.d.ts' does not exist.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/tapable/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/tapable.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/tapable/index.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/tapable/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/tapable/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/tapable/index.d.ts'.
+======== Module name 'tapable' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/tapable/index.d.ts' with Package ID '@types/tapable/index.d.ts@1.0.6'. ========
+======== Resolving module 'uglify-js' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/index.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'uglify-js' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/uglify-js.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/uglify-js.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/uglify-js.d.ts' does not exist.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/uglify-js/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/uglify-js.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/uglify-js/index.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/uglify-js/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/uglify-js/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/uglify-js/index.d.ts'.
+======== Module name 'uglify-js' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/uglify-js/index.d.ts' with Package ID '@types/uglify-js/index.d.ts@3.9.3'. ========
+======== Resolving module 'anymatch' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/index.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'anymatch' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/anymatch/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/anymatch.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/anymatch.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/anymatch.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+'package.json' does not have a 'main' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/anymatch/index.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/anymatch/index.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/anymatch/index.d.ts' does not exist.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index' does not exist.
+Loading module as file / folder, candidate module location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index', target file type 'TypeScript'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index.d.ts'.
+======== Module name 'anymatch' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/anymatch/index.d.ts' with Package ID '@types/anymatch/index.d.ts@1.3.1'. ========
+======== Resolving module 'source-map' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/index.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'source-map' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/node_modules' does not exist, skipping all lookups in it.
+Resolution for module 'source-map' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+======== Module name 'source-map' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-map/source-map.d.ts' with Package ID 'source-map/source-map.d.ts@0.6.1'. ========
+======== Resolving module 'webpack-sources' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/index.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'webpack-sources' from 'node_modules' folder, target file type 'TypeScript'.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack/node_modules' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+'package.json' has 'main' field './lib/index.js' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources/lib/index.js'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources/lib/index.js' exist - use it as a name resolution result.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources/lib/index.js' has an unsupported extension, so skipping it.
+Loading module as file / folder, candidate module location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources/lib/index.js', target file type 'TypeScript'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources/lib/index.js.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources/lib/index.js.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources/lib/index.js.d.ts' does not exist.
+File name '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources/lib/index.js' has a '.js' extension - stripping it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources/lib/index.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources/lib/index.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources/lib/index.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources/lib/index.js' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources/index.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources/index.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/webpack-sources/index.d.ts' does not exist.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/index.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/index.d.ts'.
+======== Module name 'webpack-sources' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/index.d.ts' with Package ID '@types/webpack-sources/index.d.ts@1.4.2'. ========
+======== Resolving type reference directive 'node', containing file '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/index.d.ts', root directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'. ========
+Resolving with primary search path '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/package.json'.
+'package.json' has a 'typesVersions' field with version-specific path mappings.
+'package.json' does not have a 'typesVersions' entry that matches version '4.0'.
+'package.json' does not have a 'typings' field.
+'package.json' has 'types' field 'index.d.ts' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts'.
+======== Type reference directive 'node' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node/index.d.ts' with Package ID '@types/node/index.d.ts@14.11.2', primary: true. ========
+======== Resolving module 'crypto' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/index.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'crypto' from 'node_modules' folder, target file type 'TypeScript'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/crypto.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/crypto.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/crypto.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/@types' does not exist, skipping all lookups in it.
+Resolution for module 'crypto' was found in cache from location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types'.
+======== Module name 'crypto' was not resolved. ========
+======== Resolving module 'source-map' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/index.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'source-map' from 'node_modules' folder, target file type 'TypeScript'.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/source-map/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/source-map.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/source-map.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/source-map.d.ts' does not exist.
+'package.json' has 'typings' field 'source-map' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/source-map/source-map'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/source-map/source-map' does not exist.
+Loading module as file / folder, candidate module location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/source-map/source-map', target file type 'TypeScript'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/source-map/source-map.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/source-map/source-map.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts'.
+======== Module name 'source-map' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts' with Package ID 'source-map/source-map.d.ts@0.7.3'. ========
+======== Resolving module 'source-list-map' from '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/index.d.ts'. ========
+Explicitly specified module resolution kind: 'NodeJs'.
+Loading module 'source-list-map' from 'node_modules' folder, target file type 'TypeScript'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/source-list-map.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/source-list-map.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/source-list-map.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/webpack-sources/node_modules/@types' does not exist, skipping all lookups in it.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/node_modules' does not exist, skipping all lookups in it.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+'package.json' has 'main' field 'lib/index.js' that references '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map/lib/index.js'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map/lib/index.js' exist - use it as a name resolution result.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map/lib/index.js' has an unsupported extension, so skipping it.
+Loading module as file / folder, candidate module location '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map/lib/index.js', target file type 'TypeScript'.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map/lib/index.js.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map/lib/index.js.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map/lib/index.js.d.ts' does not exist.
+File name '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map/lib/index.js' has a '.js' extension - stripping it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map/lib/index.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map/lib/index.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map/lib/index.d.ts' does not exist.
+Directory '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map/lib/index.js' does not exist, skipping all lookups in it.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map/index.ts' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map/index.tsx' does not exist.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/source-list-map/index.d.ts' does not exist.
+Found 'package.json' at '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/source-list-map/package.json'.
+'package.json' does not have a 'typesVersions' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/source-list-map.d.ts' does not exist.
+'package.json' does not have a 'typings' field.
+'package.json' does not have a 'types' field.
+File '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/source-list-map/index.d.ts' exist - use it as a name resolution result.
+Resolving real path for '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/source-list-map/index.d.ts', result '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/source-list-map/index.d.ts'.
+======== Module name 'source-list-map' was successfully resolved to '/Users/changjaeyoung/Desktop/tictactoe/node_modules/@types/source-list-map/index.d.ts' with Package ID '@types/source-list-map/index.d.ts@0.1.2'. ========

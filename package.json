@@ -5,6 +5,7 @@
   "author": "SmileJayden <wkdwodud07@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "tsc": "tsc --traceResolution > test.txt",
     "dev": "webpack-dev-server --hot",
     "build": "webpack"
   },
