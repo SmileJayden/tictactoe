@@ -6,9 +6,13 @@
     "moduleResolution": "Node",
     "target": "es6",
     "lib": ["es2020", "dom"],
-    "strict": true
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-  "files": ["./shims.d.ts", "./src/hooks.ts"],
+  "files": ["./shims.d.ts"],
   "include": ["./src/**/*.vue", "./src/**/*.ts"],
   "exclude": ["node_modules"]
-}
+}1

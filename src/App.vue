@@ -10,8 +10,8 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { useScore } from './hooks';
-import Child from './Child.vue';
+import { useScore } from '@/hooks';
+import Child from '@/Child.vue';
 
 export default defineComponent({
   name: 'App',

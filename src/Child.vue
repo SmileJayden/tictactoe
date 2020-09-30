@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { useMousePosition } from './hooks.ts';
+import { useMousePosition } from '@/hooks';
 
 export default defineComponent({
   name: 'Child',
