@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "moduleResolution": "node",
     "noImplicitAny": true,
     "sourceMap": true,
-    "module": "esnext", // what different with moduleResolution?
-    "moduleResolution": "Node",
-    "target": "es6",
-    "lib": ["es2020", "dom"],
-    "strict": true,
+    "lib": ["es2020", "dom", "dom.iterable"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
   },
   "files": ["./shims.d.ts"],
-  "include": ["./src/**/*.vue", "./src/**/*.ts"],
+  "include": ["./src/*"],
   "exclude": ["node_modules"]
-}1
+}

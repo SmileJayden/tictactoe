@@ -30,14 +30,14 @@ const config = {
       },
     ],
   },
-  // TODO: what resolver doing?
   resolve: {
     alias: {
       vue: 'vue/dist/vue.esm-bundler.js', // wtf... why should I doing this??
       '@': path.resolve(__dirname, 'src'),
     },
-    extensions: ['.vue', '.ts', '.js'],
+    extensions: ['.ts', '.vue', '.js'],
   },
+  devServer: {},
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
