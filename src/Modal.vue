@@ -1,7 +1,11 @@
 <template>
   <teleport to="#modal-target">
-    <div v-if="visible" class="modal-background" @click="$emit('close')">
-      <div class="modal-container"><slot></slot></div>
+    <div v-if="visible" class="modal-overlay"></div>
+    <div v-if="visible" class="modal-container" @click="$emit('close')">
+      <div class="modal-inner" @click.stop="">
+        <slot></slot>
+        <div class="footer"><button @click="$emit('close')">확인</button></div>
+      </div>
     </div>
   </teleport>
 </template>
@@ -13,23 +17,46 @@ export default defineComponent({
   name: 'Modal',
   emits: ['close'],
   props: {
-    visible: { default: true, type: Boolean },
+    visible: { default: false, type: Boolean },
   },
 });
 </script>
 
 <style scoped lang="scss">
-.modal-background {
+.modal-overlay,
+.modal-container {
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
+  outline: none;
+}
+.modal-overlay {
+  z-index: 1000;
   opacity: 0.3;
   background-color: black;
-  .modal-container {
+}
+.modal-container {
+  z-index: 1005;
+  .modal-inner {
+    border-radius: 8px;
+    background-color: white;
     margin: 200px auto;
-    width: 300px;
+    width: 500px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 1fr 80px;
+    align-items: center;
+    justify-content: center;
+    .footer {
+      text-align: center;
+      button {
+        width: 140px;
+        height: 40px;
+        cursor: pointer;
+      }
+    }
   }
 }
 </style>

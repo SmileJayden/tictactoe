@@ -14,18 +14,32 @@
       />
     </div>
   </div>
-  <Modal :visible="modalVisible" @close="onCloseModal">
-    <div>From Slot</div>
+  <Modal :visible="modalState.modalVisible" @close="onCloseModal">
+    <p class="modal-msg">{{ modalState.modalMsg }}</p>
   </Modal>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
+import { defineComponent, PropType, reactive, ref } from 'vue';
 import Modal from '@/Modal.vue';
-import { checkBoardStatus, getInitBoard } from '@/utils';
 import { Board, BoardStatus, Player } from '@/types';
+import { checkBoardStatus, getInitBoard } from '@/utils';
 
-function useBoard(gameSize: number) {
+export function useModal() {
+  const modalState = reactive({
+    modalMsg: '',
+    modalVisible: false,
+  });
+  function setModalMsg(msg: string) {
+    modalState.modalMsg = msg;
+  }
+  function setModalVisible(visible: boolean) {
+    modalState.modalVisible = visible;
+  }
+  return { modalState, setModalMsg, setModalVisible };
+}
+
+export function useBoard(gameSize: number) {
   const turn = ref<Player>(Player.A);
   function setTurn() {
     turn.value = turn.value === Player.A ? Player.B : Player.A;
@@ -47,13 +61,24 @@ function useBoard(gameSize: number) {
   return { board, boardStatus, setBoard, resetBoard, turn, setTurn };
 }
 
+interface PlayerProp {
+  color: string;
+  name: string;
+}
+
 export default defineComponent({
   name: 'Board',
   components: { Modal },
   props: {
     gameSize: { type: Number, default: 3 },
-    playerAColor: { type: String, default: 'red' },
-    playerBColor: { type: String, default: 'blue' },
+    playerA: {
+      type: Object as PropType<PlayerProp>,
+      default: { name: 'PlayerA', color: 'red' },
+    },
+    playerB: {
+      type: Object as PropType<PlayerProp>,
+      default: { name: 'PlayerB', color: 'blue' },
+    },
   },
   emits: ['win-a', 'win-b'],
   setup(props, { emit }) {
@@ -66,6 +91,8 @@ export default defineComponent({
       setTurn,
     } = useBoard(props.gameSize);
 
+    const { modalState, setModalMsg, setModalVisible } = useModal();
+
     function onClickTile(i: number, j: number) {
       setBoard(i, j);
       switch (boardStatus.value) {
@@ -73,12 +100,18 @@ export default defineComponent({
           switch (turn.value) {
             case Player.A:
               emit('win-a');
+              setModalMsg(`${props.playerA.name}의 승리 입니다`);
               break;
             case Player.B:
               emit('win-b');
+              setModalMsg(`${props.playerB.name}의 승리 입니다`);
               break;
           }
+          setModalVisible(true);
+          setTurn();
+          break;
         case BoardStatus.DRAW:
+          setModalMsg(`무승부 입니다`);
           setModalVisible(true);
           setTurn();
           break;
@@ -88,24 +121,19 @@ export default defineComponent({
       }
     }
 
-    const modalVisible = ref<boolean>(false);
-    function setModalVisible(visible: boolean) {
-      modalVisible.value = visible;
-    }
-
     function onCloseModal() {
       setModalVisible(false);
       resetBoard();
     }
 
-    return { board, onClickTile, modalVisible, onCloseModal };
+    return { board, onClickTile, modalState, onCloseModal };
   },
   computed: {
     cssVar(): object {
-      const { playerAColor, playerBColor } = this;
+      const { playerA, playerB } = this;
       return {
-        '--player-a-color': playerAColor,
-        '--player-b-color': playerBColor,
+        '--player-a-color': playerA.color,
+        '--player-b-color': playerB.color,
       };
     },
   },
@@ -144,5 +172,12 @@ export default defineComponent({
       }
     }
   }
+}
+</style>
+
+<style>
+p.modal-msg {
+  font-size: 24px;
+  line-height: 28px;
 }
 </style>

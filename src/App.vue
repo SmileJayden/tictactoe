@@ -11,6 +11,8 @@
       <div>
         <Board
           :game-size="gameSize"
+          :player-a="{ name: 'Jang Dong Keon', color: 'red' }"
+          :player-b="{ name: 'Cheon Woo Hee', color: 'blue' }"
           @win-a="redScoreIncrease"
           @win-b="blueScoreIncrease"
         />
@@ -30,7 +32,7 @@ import { defineComponent, ref } from 'vue';
 import Player from '@/Player.vue';
 import Board from '@/Board.vue';
 
-export function usePersistedScore(key: string) {
+function usePersistedScore(key: string) {
   const score = ref(0);
   function increase(): void {
     score.value++;
