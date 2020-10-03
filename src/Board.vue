@@ -15,7 +15,7 @@
     </div>
   </div>
   <Modal :visible="modalState.modalVisible" @close="onCloseModal">
-    <p class="modal-msg">{{ modalState.modalMsg }}</p>
+    <p class="modal-msg" v-html="modalState.modalMsg" />
   </Modal>
 </template>
 
@@ -95,11 +95,15 @@ export default defineComponent({
           switch (turn.value) {
             case Player.A:
               emit('win-a');
-              setModalMsg(`${props.playerA.name}의 승리 입니다`);
+              setModalMsg(
+                `<span style="color: ${props.playerA.color}">${props.playerA.name}</span> 의 승리 입니다`
+              );
               break;
             case Player.B:
               emit('win-b');
-              setModalMsg(`${props.playerB.name}의 승리 입니다`);
+              setModalMsg(
+                `<span style="color: ${props.playerB.color}">${props.playerB.name}</span> 의 승리 입니다`
+              );
               break;
           }
           setModalVisible(true);
@@ -121,7 +125,7 @@ export default defineComponent({
       resetBoard();
     }
 
-    return { board, onClickTile, modalState, onCloseModal };
+    return { board, turn, onClickTile, modalState, onCloseModal };
   },
   computed: {
     cssVar(): object {
@@ -133,8 +137,6 @@ export default defineComponent({
     },
   },
 });
-
-// TODO board width height minmax
 </script>
 
 <style scoped lang="scss">
@@ -173,9 +175,12 @@ export default defineComponent({
 }
 </style>
 
-<style>
+<style lang="scss">
 p.modal-msg {
   font-size: 24px;
   line-height: 28px;
+  span {
+    font-weight: bold;
+  }
 }
 </style>

@@ -41,10 +41,10 @@ export default defineComponent({
   },
   setup() {
     const { score: redScore, increase: redScoreIncrease } = usePersistedScore(
-      'red'
+      'playera'
     );
     const { score: blueScore, increase: blueScoreIncrease } = usePersistedScore(
-      'blue'
+      'playerb'
     );
     return { redScore, redScoreIncrease, blueScore, blueScoreIncrease };
   },
@@ -55,7 +55,7 @@ export default defineComponent({
   },
   computed: {
     playerA(): PlayerProp {
-      return { name: 'Jang Dong Geon', color: 'red' };
+      return { name: 'Jang Dong Geon', color: 'brown' };
     },
     playerB(): PlayerProp {
       return { name: 'Cheon Woo Hee', color: 'blue' };
@@ -71,7 +71,7 @@ export default defineComponent({
   padding: 40px 0 10px;
 }
 .game-wrapper {
-  padding: 70px 100px;
+  padding: 70px 10%;
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-column-gap: 30px;

@@ -36,7 +36,7 @@ export default defineComponent({
 }
 .modal-overlay {
   z-index: 1000;
-  opacity: 0.3;
+  opacity: 0.5;
   background-color: black;
 }
 .modal-container {
@@ -44,7 +44,7 @@ export default defineComponent({
   .modal-inner {
     border-radius: 8px;
     background-color: white;
-    margin: 200px auto;
+    margin: 250px auto;
     width: 500px;
     height: 300px;
     display: grid;
