@@ -13,6 +13,8 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 
+// TODO modal animation
+
 export default defineComponent({
   name: 'Modal',
   emits: ['close'],

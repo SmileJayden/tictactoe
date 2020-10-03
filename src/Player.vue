@@ -1,25 +1,28 @@
 <template>
   <div class="container" :style="cssVar">
-    <img :src="imgUrl" :alt="name" />
-    <p>{{ name }}</p>
+    <img :src="imgUrl" :alt="player.name" />
+    <p>{{ player.name }}</p>
     <p>Score: {{ score }}</p>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, PropType } from 'vue';
+import { PlayerProp } from '@/types';
 
 export default defineComponent({
   name: 'Player',
   props: {
+    player: {
+      type: Object as PropType<PlayerProp>,
+      default: { name: 'Player', color: 'red' },
+    },
     imgUrl: String,
-    name: String,
-    color: String,
     score: Number,
   },
   computed: {
     cssVar(): object {
-      return { '--color': this.color };
+      return { '--color': this.player.color };
     },
   },
 });

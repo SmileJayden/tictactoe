@@ -22,7 +22,7 @@
 <script lang="ts">
 import { defineComponent, PropType, reactive, ref } from 'vue';
 import Modal from '@/Modal.vue';
-import { Board, BoardStatus, Player } from '@/types';
+import { Board, BoardStatus, Player, PlayerProp } from '@/types';
 import { checkBoardStatus, getInitBoard } from '@/utils';
 
 export function useModal() {
@@ -59,11 +59,6 @@ export function useBoard(gameSize: number) {
   }
 
   return { board, boardStatus, setBoard, resetBoard, turn, setTurn };
-}
-
-interface PlayerProp {
-  color: string;
-  name: string;
 }
 
 export default defineComponent({
@@ -138,13 +133,16 @@ export default defineComponent({
     },
   },
 });
+
+// TODO board width height minmax
 </script>
 
 <style scoped lang="scss">
 .board-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 400px;
+  width: 400px;
   border: 1px solid black;
   .board-row {
     flex: 1;

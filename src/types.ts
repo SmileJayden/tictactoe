@@ -12,3 +12,8 @@ export enum BoardStatus {
   DRAW,
   WIN,
 }
+
+export interface PlayerProp {
+  color: string;
+  name: string;
+}

@@ -2,27 +2,15 @@
   <div>
     <h1 class="title">TicTocToe</h1>
     <div class="game-wrapper">
-      <Player
-        name="Jang Dong Geon"
-        :score="redScore"
-        color="red"
-        img-url="assets/jdg.jpg"
+      <Player :score="redScore" :player="playerA" img-url="assets/jdg.jpg" />
+      <Board
+        :game-size="gameSize"
+        :player-a="playerA"
+        :player-b="playerB"
+        @win-a="redScoreIncrease"
+        @win-b="blueScoreIncrease"
       />
-      <div>
-        <Board
-          :game-size="gameSize"
-          :player-a="{ name: 'Jang Dong Keon', color: 'red' }"
-          :player-b="{ name: 'Cheon Woo Hee', color: 'blue' }"
-          @win-a="redScoreIncrease"
-          @win-b="blueScoreIncrease"
-        />
-      </div>
-      <Player
-        name="Cheon Woo Hee"
-        :score="blueScore"
-        color="blue"
-        img-url="assets/cwh.jpg"
-      />
+      <Player :player="playerB" :score="blueScore" img-url="assets/cwh.jpg" />
     </div>
   </div>
 </template>
@@ -31,6 +19,11 @@
 import { defineComponent, ref } from 'vue';
 import Player from '@/Player.vue';
 import Board from '@/Board.vue';
+import { PlayerProp } from '@/types';
+
+// TODO persist
+
+// TODO scalable game
 
 function usePersistedScore(key: string) {
   const score = ref(0);
@@ -60,6 +53,14 @@ export default defineComponent({
       gameSize: 3,
     };
   },
+  computed: {
+    playerA(): PlayerProp {
+      return { name: 'Jang Dong Geon', color: 'red' };
+    },
+    playerB(): PlayerProp {
+      return { name: 'Cheon Woo Hee', color: 'blue' };
+    },
+  },
 });
 </script>
 
@@ -74,5 +75,7 @@ export default defineComponent({
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-column-gap: 30px;
+  align-items: center;
+  justify-items: center;
 }
 </style>
