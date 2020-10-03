@@ -40,7 +40,8 @@ export default defineComponent({
   }
   p {
     padding: 4px 0;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 28px;
     color: white;
     background-color: var(--color);
   }
