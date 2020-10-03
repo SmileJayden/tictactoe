@@ -67,7 +67,7 @@ export default defineComponent({
 .title {
   text-align: center;
   font-size: 48px;
-  padding: 20px 0;
+  padding: 40px 0 10px;
 }
 .game-wrapper {
   padding: 70px 100px;
