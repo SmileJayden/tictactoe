@@ -8,7 +8,7 @@
       <div
         v-for="(tile, j) of boardRow"
         class="tile"
-        :class="tile"
+        :class="[tile, { colored: tile }]"
         :key="`tile-${(gameSize + 1) * j}`"
         @click="onClickTile(i, j)"
       />
@@ -163,8 +163,7 @@ export default defineComponent({
       &.player-b {
         background-color: var(--player-b-color);
       }
-      &.player-a,
-      &.player-b {
+      &.colored {
         cursor: default;
       }
       & + .tile {

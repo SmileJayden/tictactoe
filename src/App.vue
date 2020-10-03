@@ -55,7 +55,7 @@ export default defineComponent({
   },
   computed: {
     playerA(): PlayerProp {
-      return { name: 'Jang Dong Geon', color: 'brown' };
+      return { name: 'Jang Dong Geon', color: 'darkviolet' };
     },
     playerB(): PlayerProp {
       return { name: 'Cheon Woo Hee', color: 'blue' };
