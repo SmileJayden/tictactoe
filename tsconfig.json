@@ -6,6 +6,7 @@
     "moduleResolution": "node",
     "noImplicitAny": true,
     "sourceMap": true,
+    "noImplicitThis": true,
     "lib": ["es2020", "dom", "dom.iterable"],
     "baseUrl": ".",
     "paths": {

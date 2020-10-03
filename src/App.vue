@@ -8,7 +8,13 @@
         color="red"
         img-url="assets/jdg.jpg"
       />
-      <div><Board :game-size="gameSize" /></div>
+      <div>
+        <Board
+          :game-size="gameSize"
+          @win-a="redScoreIncrease"
+          @win-b="blueScoreIncrease"
+        />
+      </div>
       <Player
         name="Cheon Woo Hee"
         :score="blueScore"
