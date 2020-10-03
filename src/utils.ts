@@ -1,4 +1,4 @@
-import { Board, GameRes, Player } from '@/types';
+import { Board, BoardStatus, Player } from '@/types';
 
 function getInitBoard(gameSize: number): Board {
   return new Array(gameSize)
@@ -38,11 +38,11 @@ function checkFull(board: Board) {
   return board.every((r) => r.every((c) => c));
 }
 
-function getGameRes(board: Board): GameRes {
+function checkBoardStatus(board: Board): BoardStatus {
   if (checkRows(board) || checkCols(board) || checkDiagonals(board))
-    return GameRes.WIN;
-  else if (checkFull(board)) return GameRes.DRAW;
-  return GameRes.CONTINUE;
+    return BoardStatus.WIN;
+  else if (checkFull(board)) return BoardStatus.DRAW;
+  return BoardStatus.CONTINUE;
 }
 
-export { getInitBoard, getGameRes };
+export { getInitBoard, checkBoardStatus };

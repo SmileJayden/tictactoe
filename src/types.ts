@@ -7,7 +7,7 @@ export enum Player {
   B = 'player-b',
 }
 
-export enum GameRes {
+export enum BoardStatus {
   CONTINUE,
   DRAW,
   WIN,

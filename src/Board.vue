@@ -14,47 +14,42 @@
       />
     </div>
   </div>
+  <Modal :visible="modalVisible" @close="onCloseModal">
+    <div>From Slot</div>
+  </Modal>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import { getGameRes, getInitBoard } from '@/utils';
-import { Board, GameRes, Player } from '@/types';
+import Modal from '@/Modal.vue';
+import { checkBoardStatus, getInitBoard } from '@/utils';
+import { Board, BoardStatus, Player } from '@/types';
 
 function useBoard(gameSize: number) {
-  const turn = ref(Player.A);
+  const turn = ref<Player>(Player.A);
   function setTurn() {
     turn.value = turn.value === Player.A ? Player.B : Player.A;
   }
 
+  const boardStatus = ref<BoardStatus>(BoardStatus.CONTINUE);
   const board = ref<Board>(getInitBoard(gameSize));
   function setBoard(i: number, j: number): Player | undefined {
     if (board.value[i][j]) return;
-
     board.value[i][j] = turn.value;
-
-    const gameRes = getGameRes(board.value);
-
-    switch (gameRes) {
-      case GameRes.WIN:
-        console.log(`${turn.value} WIN !!`);
-        board.value = getInitBoard(gameSize);
-        return turn.value;
-      case GameRes.DRAW:
-        console.log(`DRAW !!`);
-        board.value = getInitBoard(gameSize);
-        break;
-      case GameRes.CONTINUE:
-        break;
-    }
-
-    setTurn();
+    boardStatus.value = checkBoardStatus(board.value);
+    if (boardStatus.value === BoardStatus.CONTINUE) setTurn();
   }
-  return { board, setBoard };
+  function resetBoard() {
+    board.value = getInitBoard(gameSize);
+    boardStatus.value = BoardStatus.CONTINUE;
+  }
+
+  return { board, boardStatus, setBoard, resetBoard, turn, setTurn };
 }
 
 export default defineComponent({
   name: 'Board',
+  components: { Modal },
   props: {
     gameSize: { type: Number, default: 3 },
     playerAColor: { type: String, default: 'red' },
@@ -62,22 +57,48 @@ export default defineComponent({
   },
   emits: ['win-a', 'win-b'],
   setup(props, { emit }) {
-    const { board, setBoard } = useBoard(props.gameSize);
+    const {
+      board,
+      boardStatus,
+      resetBoard,
+      setBoard,
+      turn,
+      setTurn,
+    } = useBoard(props.gameSize);
 
     function onClickTile(i: number, j: number) {
-      switch (setBoard(i, j)) {
-        case Player.A:
-          emit('win-a');
+      setBoard(i, j);
+      switch (boardStatus.value) {
+        case BoardStatus.WIN:
+          switch (turn.value) {
+            case Player.A:
+              emit('win-a');
+              break;
+            case Player.B:
+              emit('win-b');
+              break;
+          }
+        case BoardStatus.DRAW:
+          setModalVisible(true);
+          setTurn();
           break;
-        case Player.B:
-          emit('win-b');
-          break;
+        case BoardStatus.CONTINUE:
         default:
           break;
       }
     }
 
-    return { board, onClickTile };
+    const modalVisible = ref<boolean>(false);
+    function setModalVisible(visible: boolean) {
+      modalVisible.value = visible;
+    }
+
+    function onCloseModal() {
+      setModalVisible(false);
+      resetBoard();
+    }
+
+    return { board, onClickTile, modalVisible, onCloseModal };
   },
   computed: {
     cssVar(): object {
