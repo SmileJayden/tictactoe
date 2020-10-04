@@ -8,17 +8,23 @@
         img-url="assets/image/jdg.jpg"
       />
       <board
-        :game-size="gameSize"
+        :game-scale="gameScale"
         :player-a="playerA"
         :player-b="playerB"
         @win-a="redScoreIncrease"
         @win-b="blueScoreIncrease"
+        :key="`board-${gameScale}`"
       />
       <player-comp
         :player="playerB"
         :score="blueScore"
         img-url="assets/image/cwh.jpg"
       />
+    </div>
+    <div class="game-scale">
+      <p>GAME SCALE : {{ gameScale }} x {{ gameScale }}</p>
+      <button @click="incGameScale">INC</button>
+      <button @click="decGameScale">DEC</button>
     </div>
   </div>
 </template>
@@ -30,7 +36,21 @@ import Board from '@/Board.vue';
 import { Player } from '@/types';
 import { persist } from '@/persist';
 
-// TODO scalable game
+function useGameScale() {
+  const MIN_GAME_SCALE = 3;
+  const MAX_GAME_SCALE = 5;
+
+  const gameScale = ref(MIN_GAME_SCALE);
+  function incGameScale() {
+    if (gameScale.value >= MAX_GAME_SCALE) return;
+    gameScale.value++;
+  }
+  function decGameScale() {
+    if (gameScale.value <= MIN_GAME_SCALE) return;
+    gameScale.value--;
+  }
+  return { gameScale, incGameScale, decGameScale };
+}
 
 function usePersistedScore(id: string) {
   const score = ref(persist.getItem<number>(id, 0));
@@ -60,6 +80,9 @@ export default defineComponent({
     const { score: blueScore, increase: blueScoreIncrease } = usePersistedScore(
       playerB.id!
     );
+
+    const { gameScale, incGameScale, decGameScale } = useGameScale();
+
     return {
       playerA,
       playerB,
@@ -67,11 +90,9 @@ export default defineComponent({
       redScoreIncrease,
       blueScore,
       blueScoreIncrease,
-    };
-  },
-  data() {
-    return {
-      gameSize: 3,
+      gameScale,
+      incGameScale,
+      decGameScale,
     };
   },
 });
@@ -84,11 +105,23 @@ export default defineComponent({
   padding: 40px 0 10px;
 }
 .game-wrapper {
-  padding: 70px 5%;
+  padding: 70px 5% 20px;
   display: grid;
   grid-template-columns: minmax(auto, 1fr) 1fr minmax(auto, 1fr);
   grid-column-gap: 30px;
   align-items: center;
   justify-items: center;
+}
+.game-scale {
+  text-align: center;
+  p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  button {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+  }
 }
 </style>

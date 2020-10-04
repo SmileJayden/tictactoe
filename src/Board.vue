@@ -9,7 +9,7 @@
         v-for="(tile, j) of boardRow"
         class="tile"
         :class="[tile, { colored: tile }]"
-        :key="`tile-${(gameSize + 1) * j}`"
+        :key="`tile-${(gameScale + 1) * j}`"
         @click="onClickTile(i, j)"
       />
     </div>
@@ -39,14 +39,14 @@ export function useModal() {
   return { modalState, setModalMsg, setModalVisible };
 }
 
-export function useBoard(gameSize: number) {
+export function useBoard(gameScale: number) {
   const turn = ref<TurnOwner>(TurnOwner.A);
   function setTurn() {
     turn.value = turn.value === TurnOwner.A ? TurnOwner.B : TurnOwner.A;
   }
 
   const boardStatus = ref<BoardStatus>(BoardStatus.CONTINUE);
-  const board = ref<Board>(getInitBoard(gameSize));
+  const board = ref<Board>(getInitBoard(gameScale));
   function setBoard(i: number, j: number): void {
     if (board.value[i][j]) return;
     board.value[i][j] = turn.value;
@@ -54,7 +54,7 @@ export function useBoard(gameSize: number) {
     if (boardStatus.value === BoardStatus.CONTINUE) setTurn();
   }
   function resetBoard() {
-    board.value = getInitBoard(gameSize);
+    board.value = getInitBoard(gameScale);
     boardStatus.value = BoardStatus.CONTINUE;
   }
 
@@ -65,7 +65,7 @@ export default defineComponent({
   name: 'Board',
   components: { Modal },
   props: {
-    gameSize: { type: Number, default: 3 },
+    gameScale: { type: Number, default: 3 },
     playerA: {
       type: Object as PropType<Player>,
       default: { name: 'PlayerA', color: 'red' },
@@ -84,7 +84,7 @@ export default defineComponent({
       setBoard,
       turn,
       setTurn,
-    } = useBoard(props.gameSize);
+    } = useBoard(props.gameScale);
 
     const { modalState, setModalMsg, setModalVisible } = useModal();
 
