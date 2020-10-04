@@ -26,9 +26,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, reactive, watchEffect } from 'vue';
-import PlayerComp from '@/Player.vue';
-import Board from '@/Board.vue';
+import {
+  defineComponent,
+  defineAsyncComponent,
+  ref,
+  reactive,
+  watchEffect,
+} from 'vue';
 import { Player } from '@/types';
 import { persist } from '@/persist';
 import jdk from '@assets/image/jdg.jpg';
@@ -71,8 +75,8 @@ function usePersistedScore(id: string) {
 export default defineComponent({
   name: 'App',
   components: {
-    PlayerComp,
-    Board,
+    PlayerComp: defineAsyncComponent(() => import('@/Player.vue')),
+    Board: defineAsyncComponent(() => import('@/Board.vue')),
   },
   setup() {
     const playerA: Player = {
