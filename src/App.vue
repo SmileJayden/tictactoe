@@ -2,11 +2,7 @@
   <div>
     <h1 class="title">TicTocToe</h1>
     <div class="game-wrapper">
-      <player-comp
-        :score="redScore"
-        :player="playerA"
-        img-url="../assets/image/jdg.jpg"
-      />
+      <player-comp :score="redScore" :player="playerA" :img-url="jdk" />
       <board
         :game-scale="gameScale"
         :player-a="playerA"
@@ -15,41 +11,53 @@
         @win-b="blueScoreIncrease"
         :key="`board-${gameScale}`"
       />
-      <player-comp
-        :player="playerB"
-        :score="blueScore"
-        img-url="../assets/image/cwh.jpg"
-      />
+      <player-comp :player="playerB" :score="blueScore" :img-url="cwh" />
     </div>
     <div class="game-scale">
       <p>GAME SCALE : {{ gameScale }} x {{ gameScale }}</p>
-      <button @click="incGameScale">INC</button>
-      <button @click="decGameScale">DEC</button>
+      <button @click="incGameScale" :disabled="scaleChangeDisabled.inc">
+        INC
+      </button>
+      <button @click="decGameScale" :disabled="scaleChangeDisabled.dec">
+        DEC
+      </button>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
+import { defineComponent, ref, reactive, watchEffect } from 'vue';
 import PlayerComp from '@/Player.vue';
 import Board from '@/Board.vue';
 import { Player } from '@/types';
 import { persist } from '@/persist';
+import jdk from '@assets/image/jdg.jpg';
+import cwh from '@assets/image/cwh.jpg';
 
 function useGameScale() {
   const MIN_GAME_SCALE = 3;
   const MAX_GAME_SCALE = 5;
 
   const gameScale = ref(MIN_GAME_SCALE);
+  const scaleChangeDisabled = reactive({ inc: false, dec: false });
+
   function incGameScale() {
-    if (gameScale.value >= MAX_GAME_SCALE) return;
+    if (scaleChangeDisabled.inc) return;
     gameScale.value++;
   }
   function decGameScale() {
-    if (gameScale.value <= MIN_GAME_SCALE) return;
+    if (scaleChangeDisabled.dec) return;
     gameScale.value--;
   }
-  return { gameScale, incGameScale, decGameScale };
+  watchEffect(
+    () => {
+      scaleChangeDisabled.inc = gameScale.value >= MAX_GAME_SCALE;
+      scaleChangeDisabled.dec = gameScale.value <= MIN_GAME_SCALE;
+    },
+    { flush: 'sync' }
+  );
+
+  return { gameScale, scaleChangeDisabled, incGameScale, decGameScale };
 }
 
 function usePersistedScore(id: string) {
@@ -81,7 +89,12 @@ export default defineComponent({
       playerB.id!
     );
 
-    const { gameScale, incGameScale, decGameScale } = useGameScale();
+    const {
+      gameScale,
+      scaleChangeDisabled,
+      incGameScale,
+      decGameScale,
+    } = useGameScale();
 
     return {
       playerA,
@@ -91,8 +104,11 @@ export default defineComponent({
       blueScore,
       blueScoreIncrease,
       gameScale,
+      scaleChangeDisabled,
       incGameScale,
       decGameScale,
+      jdk,
+      cwh,
     };
   },
 });
@@ -122,6 +138,10 @@ export default defineComponent({
     width: 100px;
     height: 50px;
     font-size: 20px;
+    cursor: pointer;
+    + button {
+      margin-left: 10px;
+    }
   }
 }
 </style>

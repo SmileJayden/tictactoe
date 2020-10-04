@@ -10,10 +10,11 @@
     "lib": ["es2020", "dom", "dom.iterable"],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@assets/*": ["./assets/*"]
     }
   },
   "files": ["./shims.d.ts"],
-  "include": ["./src/*"],
+  "include": ["./src/*", "./assets/*"],
   "exclude": ["node_modules"]
 }

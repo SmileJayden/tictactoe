@@ -17,7 +17,7 @@ export default defineComponent({
       type: Object as PropType<Player>,
       default: { name: 'Player', color: 'red' },
     },
-    imgUrl: String,
+    imgUrl: { type: String, required: true },
     score: Number,
   },
   computed: {

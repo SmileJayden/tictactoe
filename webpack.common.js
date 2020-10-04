@@ -8,6 +8,7 @@ const config = {
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
   },
+  target: 'web',
   module: {
     rules: [
       {
@@ -27,8 +28,12 @@ const config = {
         loader: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.jpg$/,
-        loader: ['file-loader'],
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]?[hash]',
+          outputPath: 'assets/image',
+        },
       },
     ],
   },
@@ -36,10 +41,10 @@ const config = {
     alias: {
       vue: 'vue/dist/vue.esm-bundler.js', // wtf... why should I doing this??
       '@': path.resolve(__dirname, 'src'),
+      '@assets': path.resolve(__dirname, 'assets'),
     },
-    extensions: ['.ts', '.vue', '.js'],
+    extensions: ['.ts', '.vue', 'jpg', '.js'],
   },
-  devServer: {},
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
