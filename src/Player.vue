@@ -8,13 +8,13 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue';
-import { PlayerProp } from '@/types';
+import { Player } from '@/types';
 
 export default defineComponent({
   name: 'Player',
   props: {
     player: {
-      type: Object as PropType<PlayerProp>,
+      type: Object as PropType<Player>,
       default: { name: 'Player', color: 'red' },
     },
     imgUrl: String,

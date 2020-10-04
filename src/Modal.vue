@@ -14,6 +14,7 @@
 import { defineComponent } from 'vue';
 
 // TODO modal animation
+// TODO visible prop two way binding
 
 export default defineComponent({
   name: 'Modal',

@@ -22,7 +22,7 @@
 <script lang="ts">
 import { defineComponent, PropType, reactive, ref } from 'vue';
 import Modal from '@/Modal.vue';
-import { Board, BoardStatus, Player, PlayerProp } from '@/types';
+import { Board, BoardStatus, TurnOwner, Player } from '@/types';
 import { checkBoardStatus, getInitBoard } from '@/utils';
 
 export function useModal() {
@@ -40,14 +40,14 @@ export function useModal() {
 }
 
 export function useBoard(gameSize: number) {
-  const turn = ref<Player>(Player.A);
+  const turn = ref<TurnOwner>(TurnOwner.A);
   function setTurn() {
-    turn.value = turn.value === Player.A ? Player.B : Player.A;
+    turn.value = turn.value === TurnOwner.A ? TurnOwner.B : TurnOwner.A;
   }
 
   const boardStatus = ref<BoardStatus>(BoardStatus.CONTINUE);
   const board = ref<Board>(getInitBoard(gameSize));
-  function setBoard(i: number, j: number): Player | undefined {
+  function setBoard(i: number, j: number): void {
     if (board.value[i][j]) return;
     board.value[i][j] = turn.value;
     boardStatus.value = checkBoardStatus(board.value);
@@ -67,11 +67,11 @@ export default defineComponent({
   props: {
     gameSize: { type: Number, default: 3 },
     playerA: {
-      type: Object as PropType<PlayerProp>,
+      type: Object as PropType<Player>,
       default: { name: 'PlayerA', color: 'red' },
     },
     playerB: {
-      type: Object as PropType<PlayerProp>,
+      type: Object as PropType<Player>,
       default: { name: 'PlayerB', color: 'blue' },
     },
   },
@@ -93,13 +93,13 @@ export default defineComponent({
       switch (boardStatus.value) {
         case BoardStatus.WIN:
           switch (turn.value) {
-            case Player.A:
+            case TurnOwner.A:
               emit('win-a');
               setModalMsg(
                 `<span style="color: ${props.playerA.color}">${props.playerA.name}</span> 의 승리 입니다`
               );
               break;
-            case Player.B:
+            case TurnOwner.B:
               emit('win-b');
               setModalMsg(
                 `<span style="color: ${props.playerB.color}">${props.playerB.name}</span> 의 승리 입니다`
@@ -107,12 +107,10 @@ export default defineComponent({
               break;
           }
           setModalVisible(true);
-          setTurn();
           break;
         case BoardStatus.DRAW:
           setModalMsg(`무승부 입니다`);
           setModalVisible(true);
-          setTurn();
           break;
         case BoardStatus.CONTINUE:
         default:
@@ -121,8 +119,9 @@ export default defineComponent({
     }
 
     function onCloseModal() {
-      setModalVisible(false);
       resetBoard();
+      setTurn();
+      setModalVisible(false);
     }
 
     return { board, turn, onClickTile, modalState, onCloseModal };

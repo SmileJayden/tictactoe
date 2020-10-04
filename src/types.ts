@@ -1,8 +1,8 @@
-export type Tile = Player | null | boolean;
+export type Tile = TurnOwner | null | boolean;
 
 export type Board = Tile[][];
 
-export enum Player {
+export enum TurnOwner {
   A = 'player-a',
   B = 'player-b',
 }
@@ -13,7 +13,8 @@ export enum BoardStatus {
   WIN,
 }
 
-export interface PlayerProp {
+export interface Player {
   color: string;
   name: string;
+  id?: string;
 }

@@ -1,4 +1,4 @@
-import { Board, BoardStatus, Player } from '@/types';
+import { Board, BoardStatus, TurnOwner } from '@/types';
 
 function getInitBoard(gameSize: number): Board {
   return new Array(gameSize)
@@ -8,7 +8,8 @@ function getInitBoard(gameSize: number): Board {
 
 function checkRows(board: Board): boolean {
   return board.some(
-    (r) => r.every((c) => c === Player.A) || r.every((c) => c === Player.B)
+    (r) =>
+      r.every((c) => c === TurnOwner.A) || r.every((c) => c === TurnOwner.B)
   );
 }
 
