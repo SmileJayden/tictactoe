@@ -13,7 +13,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 
-// TODO modal animation
 // TODO visible prop two way binding
 
 export default defineComponent({
@@ -43,6 +42,10 @@ export default defineComponent({
 .modal-container {
   z-index: 1005;
   .modal-inner {
+    animation-name: show-up;
+    animation-duration: 250ms;
+    animation-timing-function: ease-in-out;
+
     border-radius: 8px;
     background-color: white;
     margin: 250px auto;

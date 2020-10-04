@@ -5,7 +5,7 @@
   "author": "SmileJayden <wkdwodud07@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "tsc": "tsc --noEmit --traceResolution > resolution.txt",
+    "tsc": "tsc --noEmit",
     "dev": "webpack-dev-server --hot",
     "build": "webpack"
   },

@@ -1,3 +1,7 @@
+interface StorageObject {
+  [key: string]: any;
+}
+
 class Persist {
   private storage: Storage;
   private readonly storeKey: string;
@@ -7,23 +11,24 @@ class Persist {
     this.storeKey = storeKey;
 
     if (!this.storage.getItem(storeKey)) {
+      this.storage.clear();
       this.storage.setItem(this.storeKey, JSON.stringify({}));
     }
   }
 
-  setItem(key: string, value: any) {
+  getStorageObject(): StorageObject {
     const storageString = this.storage.getItem(this.storeKey);
-    if (!storageString) return;
+    if (!storageString) throw new Error('Cannot find storage');
+    return JSON.parse(storageString);
+  }
 
-    const storageObject = JSON.parse(storageString);
+  setItem(key: string, value: any): void {
+    const storageObject = this.getStorageObject();
     storageObject[key] = value;
     this.storage.setItem(this.storeKey, JSON.stringify(storageObject));
   }
-  getItem(key: string, defaultValue: any = undefined): unknown {
-    const storageString = this.storage.getItem(this.storeKey);
-    if (!storageString) return;
-
-    const storageObject = JSON.parse(storageString);
+  getItem<T>(key: string, defaultValue: T): T {
+    const storageObject = this.getStorageObject();
     if (!storageObject.hasOwnProperty(key)) {
       this.setItem(key, defaultValue);
       return defaultValue;

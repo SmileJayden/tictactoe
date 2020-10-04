@@ -5,7 +5,7 @@
       <player-comp
         :score="redScore"
         :player="playerA"
-        img-url="assets/jdg.jpg"
+        img-url="assets/image/jdg.jpg"
       />
       <board
         :game-size="gameSize"
@@ -17,7 +17,7 @@
       <player-comp
         :player="playerB"
         :score="blueScore"
-        img-url="assets/cwh.jpg"
+        img-url="assets/image/cwh.jpg"
       />
     </div>
   </div>
@@ -33,7 +33,7 @@ import { persist } from '@/persist';
 // TODO scalable game
 
 function usePersistedScore(id: string) {
-  const score = ref(persist.getItem(id, 0));
+  const score = ref(persist.getItem<number>(id, 0));
   function increase(): void {
     persist.setItem(id, ++score.value);
   }
