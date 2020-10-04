@@ -7,7 +7,8 @@
   "scripts": {
     "tsc": "tsc --noEmit",
     "dev": "webpack-dev-server --hot --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "analyze": "webpack --config webpack.prod.js"
   },
   "dependencies": {
     "vue": "^3.0.0"
@@ -25,6 +26,7 @@
     "typescript": "^4.0.3",
     "vue-loader": "^16.0.0-beta.8",
     "webpack": "^4.44.2",
+    "webpack-bundle-analyzer": "^3.9.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.1.4"
