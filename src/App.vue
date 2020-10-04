@@ -86,7 +86,7 @@ export default defineComponent({
 .game-wrapper {
   padding: 70px 5%;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: minmax(auto, 1fr) 1fr minmax(auto, 1fr);
   grid-column-gap: 30px;
   align-items: center;
   justify-items: center;

@@ -22,7 +22,7 @@
 <script lang="ts">
 import { defineComponent, PropType, reactive, ref } from 'vue';
 import Modal from '@/Modal.vue';
-import { Board, BoardStatus, TurnOwner, Player } from '@/types';
+import { Board, BoardStatus, Player, TurnOwner } from '@/types';
 import { checkBoardStatus, getInitBoard } from '@/utils';
 
 export function useModal() {
@@ -94,13 +94,11 @@ export default defineComponent({
         case BoardStatus.WIN:
           switch (turn.value) {
             case TurnOwner.A:
-              emit('win-a');
               setModalMsg(
                 `<span style="color: ${props.playerA.color}">${props.playerA.name}</span> 의 승리 입니다`
               );
               break;
             case TurnOwner.B:
-              emit('win-b');
               setModalMsg(
                 `<span style="color: ${props.playerB.color}">${props.playerB.name}</span> 의 승리 입니다`
               );
@@ -119,6 +117,16 @@ export default defineComponent({
     }
 
     function onCloseModal() {
+      if (boardStatus.value === BoardStatus.WIN) {
+        switch (turn.value) {
+          case TurnOwner.A:
+            emit('win-a');
+            break;
+          case TurnOwner.B:
+            emit('win-b');
+            break;
+        }
+      }
       resetBoard();
       setTurn();
       setModalVisible(false);
