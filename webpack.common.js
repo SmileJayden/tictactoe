@@ -3,9 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
 
 const config = {
-  mode: 'development',
   entry: './index.js',
-  devtool: 'inline-source-map',
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
@@ -27,6 +25,10 @@ const config = {
       {
         test: /\.(c|sc)ss$/,
         loader: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.jpg$/,
+        loader: ['file-loader'],
       },
     ],
   },

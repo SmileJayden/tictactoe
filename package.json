@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "tsc": "tsc --noEmit",
-    "dev": "webpack-dev-server --hot",
-    "build": "webpack"
+    "dev": "webpack-dev-server --hot --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {
     "vue": "^3.0.0"
@@ -15,6 +15,7 @@
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.0",
     "css-loader": "^4.3.0",
+    "file-loader": "^6.1.0",
     "html-webpack-plugin": "^4.5.0",
     "node-sass": "^4.14.1",
     "prettier": "^2.1.2",
@@ -25,6 +26,7 @@
     "vue-loader": "^16.0.0-beta.8",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.4"
   }
 }

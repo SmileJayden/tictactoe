@@ -5,7 +5,7 @@
       <player-comp
         :score="redScore"
         :player="playerA"
-        img-url="assets/image/jdg.jpg"
+        img-url="../assets/image/jdg.jpg"
       />
       <board
         :game-scale="gameScale"
@@ -18,7 +18,7 @@
       <player-comp
         :player="playerB"
         :score="blueScore"
-        img-url="assets/image/cwh.jpg"
+        img-url="../assets/image/cwh.jpg"
       />
     </div>
     <div class="game-scale">
